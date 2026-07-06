@@ -4,40 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>Keiten Experience Engine</title>
+  <title>Markus in Nijmegen · Keiten</title>
   <link rel="stylesheet" href="css/renderer.css">
 </head>
 <body>
 
 <div id="kee-app">
 
-  <!-- Header -->
-  <header id="kee-header">
-    <div id="kee-arc-label"></div>
-    <div id="kee-scene-indicator"></div>
-  </header>
+  <!-- ── Willkommen-Screen (sichtbar beim Start) ─────────────── -->
+  <div id="kee-welcome">
 
-  <!-- Main content – rendered entirely from JSON, nothing hard-coded here -->
-  <main id="kee-stage" aria-live="polite"></main>
+    <div class="welcome-inner">
 
-  <!-- Bottom navigation -->
-  <nav id="kee-nav" aria-label="Episodennavigation">
-    <button id="kee-btn-prev" class="nav-btn" aria-label="Vorherige Szene">← Zurück</button>
-    <button id="kee-btn-next" class="nav-btn nav-btn--primary" aria-label="Nächste Szene">Weiter →</button>
-  </nav>
+      <div class="welcome-kicker">Episode 01</div>
+      <h1 class="welcome-title">Goedemorgen,<br>meneer Weber.</h1>
+      <p class="welcome-subtitle">Eine Geschichte auf Niederländisch. Für dich – auch wenn du kein Niederländisch kannst.</p>
 
-  <!-- Hook overlay (hidden until triggered) -->
+      <div class="welcome-story">
+        <p>Markus Weber ist Schreiner aus Kleve. Er fährt heute zum ersten Mal zu einem Kunden nach Nijmegen, kurz hinter der deutschen Grenze.</p>
+        <p>Er spricht kein Niederländisch. Aber er wird mehr verstehen, als er denkt.</p>
+      </div>
+
+      <div class="welcome-goal">
+        <div class="welcome-goal-title">Heute entdeckst du</div>
+        <ul class="welcome-goal-list">
+          <li>✓ erste Begrüßungen auf Niederländisch</li>
+          <li>✓ einfache Gespräche im Bürokontext</li>
+          <li>✓ Wörter rund ums Schreinerhandwerk</li>
+          <li>✓ wie ähnlich Niederländisch dem Deutschen ist</li>
+          <li>✓ Sprachgefühl aus dem Zusammenhang</li>
+        </ul>
+      </div>
+
+      <div class="welcome-howto">
+        <div class="welcome-howto-title">So funktioniert diese Lernreise</div>
+        <ol class="welcome-howto-list">
+          <li><span class="howto-num">1</span>Lies den niederländischen Text – und versuche ihn selbst zu verstehen.</li>
+          <li><span class="howto-num">2</span>Nutze die <em>Wort-für-Wort-Hilfe</em>, wenn du etwas nicht erkennst.</li>
+          <li><span class="howto-num">3</span>Decke die deutsche Übersetzung erst danach auf.</li>
+          <li><span class="howto-num">4</span>Genieße einfach die Geschichte.</li>
+        </ol>
+      </div>
+
+      <div class="welcome-reassurance">
+        Kein Test. Keine Bewertung. Fehler sind ausdrücklich erlaubt.<br>
+        Du musst nichts auswendig lernen.
+      </div>
+
+      <button id="kee-btn-start" class="btn-start">
+        Geschichte beginnen &nbsp;▶
+      </button>
+
+      <div class="welcome-meta">Episode 01 · ca. 12 Minuten · Niveau A1</div>
+
+    </div>
+  </div>
+
+  <!-- ── Episode-Player (versteckt beim Start) ───────────────── -->
+  <div id="kee-player" class="hidden">
+
+    <header id="kee-header">
+      <div id="kee-progress-bar">
+        <div id="kee-progress-fill"></div>
+      </div>
+      <div id="kee-progress-label"></div>
+    </header>
+
+    <main id="kee-stage" aria-live="polite"></main>
+
+    <nav id="kee-nav" aria-label="Episodennavigation">
+      <button id="kee-btn-prev" class="nav-btn" aria-label="Vorherige Szene">← Zurück</button>
+      <button id="kee-btn-next" class="nav-btn nav-btn--primary" aria-label="Nächste Szene">Weiter →</button>
+    </nav>
+
+  </div>
+
+  <!-- Hook overlay -->
   <div id="kee-hook-overlay" class="hook-overlay hidden" role="dialog" aria-modal="true"></div>
 
-  <!-- Error message (hidden unless load fails) -->
+  <!-- Error (nur bei Ladefehler) -->
   <div id="kee-error" class="kee-error hidden" role="alert"></div>
 
-  <!-- Debug info (shown at bottom-right) -->
-  <div id="kee-debug" aria-hidden="true"></div>
+  <!-- Debug – nur sichtbar mit ?debug=1 in der URL -->
+  <div id="kee-debug" class="hidden" aria-hidden="true"></div>
 
 </div>
 
-<!-- Scripts – order matters: adapter first, loader + renderer before app -->
 <script src="js/trackingAdapter.js"></script>
 <script src="js/jsonLoader.js"></script>
 <script src="js/renderer.js"></script>
