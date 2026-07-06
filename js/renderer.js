@@ -241,12 +241,18 @@ const KeeRenderer = {
     name.textContent = block.speaker;
     header.appendChild(name);
 
-    if (block.speaker_note) {
-      const note = document.createElement('span');
-      note.className = 'kee-speaker-note';
-      note.textContent = block.speaker_note;
-      header.appendChild(note);
-    }
+    // speaker_note is intentionally NOT rendered.
+    //
+    // KCL schema defines it as: "Optionale Regieanweisung für Audio-Produktion"
+    // (stage direction for audio production / TTS).
+    //
+    // It belongs to the REGIE layer – for authors, voice directors, and TTS systems.
+    // It must never reach the learner.
+    //
+    // Three-layer model:
+    //   Story  → nl_text, de_text (revealed), narrator/monologue text
+    //   Regie  → speaker_note, ww_text marked as production note
+    //   Technik → scene_index, has_reveal_button, type, concept_id, etc.
 
     card.appendChild(header);
   },
