@@ -83,11 +83,20 @@ const KeeHookEngine = {
     handle.className = 'hook-handle';
     card.appendChild(handle);
 
-    // Type label
-    const typeLabel = document.createElement('div');
-    typeLabel.className = 'hook-type-label';
-    typeLabel.textContent = (hook.type || '').replace(/_/g, ' ');
-    card.appendChild(typeLabel);
+    // Narrative micro-frame instead of raw type label
+    const typeFrames = {
+      'PREDICTION':           'Eine Frage, bevor es weitergeht.',
+      'CONTINUATION_CHOICE':  'Deine Vermutung?',
+      'ROLE_ECHO':            'Jetzt du.',
+      'ANTICIPATION':         'Ein Gedanke dazwischen.',
+    };
+    const frameText = typeFrames[hook.type] || '';
+    if (frameText) {
+      const typeLabel = document.createElement('div');
+      typeLabel.className = 'hook-type-label';
+      typeLabel.textContent = frameText;
+      card.appendChild(typeLabel);
+    }
 
     // Prompt
     const prompt = document.createElement('div');

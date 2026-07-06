@@ -149,17 +149,12 @@
     const card = document.createElement('div');
     card.className = 'kee-completion';
     card.innerHTML = `
-      <div class="completion-icon">✓</div>
-      <h2 class="completion-title">Geschafft!</h2>
-      <p class="completion-intro">Du hast die erste Episode vollständig erlebt.</p>
-      <ul class="completion-list">
-        <li>✓ Eine komplette Geschichte auf Niederländisch verstanden</li>
-        <li>✓ Neue Wörter aus dem Zusammenhang erschlossen</li>
-        <li>✓ Mehrere Dialoge in Echtzeit verfolgt</li>
-        <li>✓ Das Telefonat – auch wenn es schnell war</li>
-        <li>✓ Dein Sprachgefühl trainiert</li>
-      </ul>
-      <p class="completion-next">Episode 2 erscheint bald.</p>
+      <p class="completion-drive">Markus fährt die N325 zurück nach Kleve.<br>Nijmegen liegt hinter ihm.</p>
+      <p class="completion-memory">Er denkt an den Kaffee. An die Zeichnungen.<br>An das Telefonat.</p>
+      <p class="completion-open">An das zusje.</p>
+      <div class="completion-rule"></div>
+      <p class="completion-anchor">Woensdag.<br>Am Mittwoch kommen die Zeichnungen.</p>
+      <p class="completion-next">Episode 2 folgt demnächst.</p>
     `;
 
     stage.appendChild(card);
