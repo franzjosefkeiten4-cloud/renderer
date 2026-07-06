@@ -1,0 +1,1191 @@
+{
+  "episode_id": "ep_01",
+  "arc_id": "arc_markus_nijmegen",
+  "episode_number": 1,
+  "cefr_level": "A1",
+  "audio_src": "",
+  "estimated_duration_minutes": 14.0,
+  "scenes": [
+    {
+      "index": 0,
+      "scene_id": "ep_01_scene_a",
+      "name": "Szene A – Ankunft",
+      "start_ms": 0,
+      "type": "narrator",
+      "interlinear_enabled": false
+    },
+    {
+      "index": 1,
+      "scene_id": "ep_01_scene_b",
+      "name": "Szene B – Erster Kontakt",
+      "start_ms": 45000,
+      "type": "mix",
+      "interlinear_enabled": true
+    },
+    {
+      "index": 2,
+      "scene_id": "ep_01_scene_c",
+      "name": "Szene C – Das Gespräch",
+      "start_ms": 123000,
+      "type": "mix",
+      "interlinear_enabled": true
+    },
+    {
+      "index": 3,
+      "scene_id": "ep_01_scene_d",
+      "name": "Szene D – Der Anruf",
+      "start_ms": 358000,
+      "type": "mix",
+      "interlinear_enabled": true
+    },
+    {
+      "index": 4,
+      "scene_id": "ep_01_scene_e",
+      "name": "Szene E – Abreise / Cliffhanger",
+      "start_ms": 432000,
+      "type": "narrator",
+      "interlinear_enabled": false
+    }
+  ],
+  "dialogue": [
+    {
+      "scene_index": 0,
+      "speaker": "ERZÄHLER",
+      "speaker_role": "narrator",
+      "type": "narrator_text",
+      "de_text": "Markus parkt sein Auto in einer kleinen Gasse hinter dem Marktplatz. Er ist zehn Minuten zu früh. Er lässt das Radio noch laufen. Er weiß alles – außer wie er sich auf Niederländisch vorstellen soll. Er atmet durch, nimmt seine Mappe und geht."
+    },
+    {
+      "scene_index": 1,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "öffnet die Tür, lächelnd",
+      "type": "dialogue",
+      "nl_text": "Goedemorgen! U bent Markus Weber, toch? Kom binnen, kom binnen!",
+      "ww_text": "Guten·Morgen! Sie sind Markus Weber, doch? Komm innen, komm innen!",
+      "de_text": "Guten Morgen! Sie sind Markus Weber, oder? Kommen Sie rein!",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 1,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "type": "inner_monologue",
+      "de_text": "Goedemorgen – Guten Morgen. Das war klar. Toch – doch – „oder“. Kom binnen – herein. Das war… eigentlich nicht so schwer."
+    },
+    {
+      "scene_index": 1,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "type": "dialogue",
+      "nl_text": "Wilt u koffie? Of liever thee?",
+      "ww_text": "Wollen Sie Kaffee? Oder lieber Tee?",
+      "de_text": "Möchten Sie Kaffee? Oder lieber Tee?",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 1,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "speaker_note": "sein erstes Wort auf Niederländisch",
+      "type": "dialogue",
+      "nl_text": "Koffie, graag.",
+      "ww_text": "Kaffee, gerne.",
+      "de_text": "Kaffee, bitte.",
+      "has_reveal_button": false
+    },
+    {
+      "scene_index": 2,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "stellt Kaffeebecher auf den Tisch, setzt sich gegenüber",
+      "type": "dialogue",
+      "nl_text": "Zo. Hier is uw koffie. Wij hebben vandaag veel te bespreken.",
+      "ww_text": "So. Hier ist Ihr Kaffee. Wir haben heute viel zu besprechen.",
+      "de_text": "So. Hier ist Ihr Kaffee. Wir haben heute viel zu besprechen.",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 2,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "type": "inner_monologue",
+      "de_text": "Vandaag. Van… dag. Vom Tag. Heute. Und bespreken – besprechen. Er kannte das. Dieser Mann sprach fast Deutsch."
+    },
+    {
+      "scene_index": 2,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "öffnet Mappe, legt Zeichnungen auf den Tisch",
+      "type": "dialogue",
+      "nl_text": "Het gaat om een houten trap en een boekenplank op maat. Kijk.",
+      "ww_text": "Es geht um eine hölzerne Treppe und eine Bücher·planke auf Maß. Schau.",
+      "de_text": "Es geht um eine Holztreppe und ein maßgefertigtes Bücherregal. Schauen Sie.",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 2,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "speaker_note": "tippt auf Materialkennzeichnung in den Zeichnungen",
+      "type": "dialogue",
+      "nl_text": "Thoma Holz? Holz100?",
+      "ww_text": "[Eigenname – kein Interlinear]",
+      "de_text": "Thoma Holz? Holz100?",
+      "has_reveal_button": false
+    },
+    {
+      "scene_index": 2,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "legt Stift ab, lehnt sich zurück – überrascht und erfreut",
+      "type": "dialogue",
+      "nl_text": "Precies! Kent u dat?",
+      "ww_text": "Genau! Kennen Sie das?",
+      "de_text": "Genau! Kennen Sie das?",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 2,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "speaker_note": "merklich selbstsicherer als zuvor",
+      "type": "dialogue",
+      "nl_text": "Ja. Wij werken daar ook mee. In Duitsland.",
+      "ww_text": "Ja. Wir wirken/arbeiten da auch mit. In Deutschland.",
+      "de_text": "Ja. Wir arbeiten auch damit. In Deutschland.",
+      "has_reveal_button": false
+    },
+    {
+      "scene_index": 2,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "lehnt sich zurück – deutlich wärmer als zu Beginn",
+      "type": "dialogue",
+      "nl_text": "Dan wordt dit een mooie samenwerking, denk ik.",
+      "ww_text": "Dann wird das eine schöne Zusammen·wirkung, denke ich.",
+      "de_text": "Dann wird das eine schöne Zusammenarbeit, glaube ich.",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 2,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "etwas leiser, beiläufig – aber das ist kein beiläufiger Satz",
+      "type": "dialogue",
+      "nl_text": "Nog één ding, meneer Weber. Het is een verrassing voor mijn vrouw. Zij weet het niet.",
+      "ww_text": "Noch ein Ding, Herr Weber. Es ist eine Überraschung für meine Frau. Sie weiß es nicht.",
+      "de_text": "Noch eine Sache, Herr Weber. Es ist eine Überraschung für meine Frau. Sie weiß es nicht.",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 2,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "speaker_note": "möchte sich bedanken – greift zur falschen, informellen Form",
+      "type": "dialogue",
+      "nl_text": "Dankjewel, meneer Van der Berg.",
+      "ww_text": "Dank·dir·wohl, Herr Van der Berg.",
+      "de_text": "Danke schön, Herr Van der Berg. [informell – falscher Register]",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 2,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "korrigiert sanft, lächelnd – kein Tadel, nur eine Geste",
+      "type": "dialogue",
+      "nl_text": "Dankúwel. Precies.",
+      "ww_text": "Dank·Ihnen·wohl. Genau.",
+      "de_text": "Dankeschön [formell]. Genau.",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 2,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "type": "inner_monologue",
+      "de_text": "Dankjewel – du. Dankuwel – Sie. Fast wie im Deutschen: danke dir, danke Ihnen. Er hatte den falschen gewählt. Aber Jan hatte nicht gelacht. Er hatte geholfen."
+    },
+    {
+      "scene_index": 2,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "macht kurze Notiz, schaut dann auf",
+      "type": "dialogue",
+      "nl_text": "Ik stuur u woensdag de tekeningen. Is dat goed?",
+      "ww_text": "Ich schicke Sie Mittwoch die Zeichnungen. Ist das gut?",
+      "de_text": "Ich schicke Ihnen am Mittwoch die Zeichnungen. Passt das so?",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 2,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "speaker_note": "nickt, ohne zu zögern",
+      "type": "dialogue",
+      "nl_text": "Ja. Prima.",
+      "ww_text": "Ja. Prima.",
+      "de_text": "Ja. Prima.",
+      "has_reveal_button": false
+    },
+    {
+      "scene_index": 3,
+      "speaker": "ERZÄHLER",
+      "speaker_role": "narrator",
+      "type": "narrator_text",
+      "de_text": "Jans Handy vibriert auf dem Tisch. Er schaut auf das Display. Sein Gesichtsausdruck verändert sich – kaum sichtbar, aber Markus bemerkt es. Ein kurzes Zögern. Dann nimmt er an."
+    },
+    {
+      "scene_index": 3,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "hebt die Hand kurz – einen Moment – dreht sich leicht weg",
+      "type": "dialogue",
+      "nl_text": "Eén moment. Dat is… dat is haar zusje.",
+      "ww_text": "Ein Moment. Das ist… das ist ihr Schwester·chen.",
+      "de_text": "Einen Moment. Das ist… das ist ihre jüngere Schwester.",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 3,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "type": "inner_monologue",
+      "de_text": "Zusje. Das Wort hatte er noch nie gehört. Kleine Schwester? Schwägerin? Und warum hatte Jan so… kurz gezögert, bevor er ans Telefon gegangen war?"
+    },
+    {
+      "scene_index": 3,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "Am Telefon – deutlich schneller, leiser; echter Umgangston; dreht sich halb weg. PRODUKTION: normales bis schnelles Sprechtempo, kein Pause-für-Lernende. WW und DE sind ausschließlich Produktionsreferenz – NICHT angezeigt (has_reveal_button: false).",
+      "type": "dialogue",
+      "nl_text": "Ja… nee, dat klopt niet. Luister, woensdag is het klaar. De boekenplank, ja… Nee, zij weet het nog niet. Ik bel je straks terug.",
+      "ww_text": "Ja… nein, das stimmt/klopft nicht. Hör zu, Mittwoch ist es fertig. Die Bücher·planke, ja… Nein, sie weiß es noch nicht. Ich ruf dich gleich zurück.",
+      "de_text": "Ja… nein, das stimmt nicht. Hör zu, am Mittwoch ist es fertig. Das Bücherregal, ja… Nein, sie weiß es noch nicht. Ich ruf dich gleich zurück.",
+      "has_reveal_button": false
+    },
+    {
+      "scene_index": 3,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "type": "inner_monologue",
+      "de_text": "Er verstand fast nichts. Zu schnell. Zu viel auf einmal.\n\nAber zwei Dinge waren durchgekommen.\n»Boekenplank.« Er kannte das.\n»Woensdag.« Das auch.\n\nUnd noch etwas: »Zij weet het niet.« Sie weiß es nicht.\n\nVon wem sprach Jan da?"
+    },
+    {
+      "scene_index": 3,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "kommt zurück – lächelt; das Lächeln ist einen Moment zu spät",
+      "type": "dialogue",
+      "nl_text": "Sorry. Waar waren we?",
+      "ww_text": "Entschuldigung. Wo waren wir?",
+      "de_text": "Entschuldigung. Wo waren wir?",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 3,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "speaker_note": "nach kurzem Zögern – dann direkt",
+      "type": "dialogue",
+      "nl_text": "De boekenplank?",
+      "ww_text": "Die Bücher·planke?",
+      "de_text": "Das Bücherregal?",
+      "has_reveal_button": false
+    },
+    {
+      "scene_index": 3,
+      "speaker": "JAN",
+      "speaker_role": "character",
+      "speaker_note": "nickt, kurz – sachlicher als zuvor",
+      "type": "dialogue",
+      "nl_text": "Ja. Woensdag krijgt u de tekeningen.",
+      "ww_text": "Ja. Mittwoch kriegt/bekommt Sie die Zeichnungen.",
+      "de_text": "Ja. Am Mittwoch bekommen Sie die Zeichnungen.",
+      "has_reveal_button": true
+    },
+    {
+      "scene_index": 4,
+      "speaker": "ERZÄHLER",
+      "speaker_role": "narrator",
+      "type": "narrator_text",
+      "de_text": "Draußen roch es nach Oktober.\n\nMarkus stand am Rand des Marktplatzes und hielt seinen Autoschlüssel fest. Die Herbstsonne lag schräg über dem Pflaster. Irgendwo bimmelte eine Fahrradklingel. Ein Kind rief etwas.\n\nEr hatte ungefähr eine Stunde gebraucht, um die Treppe hochzugehen und das Gespräch zu führen, das er gefürchtet hatte.\n\nEr hatte dreimal Niederländisch gesprochen.\n\nDas war alles."
+    },
+    {
+      "scene_index": 4,
+      "speaker": "ERZÄHLER",
+      "speaker_role": "narrator",
+      "type": "narrator_text",
+      "de_text": "Und dann kamen die Wörter zurück – nicht als Vokabeln, sondern als Klang.\n\n»Goedemorgen.« Das hatte Jan gesagt, als er die Tür öffnete.\n»Koffie, graag.« Das hatte er selbst gesagt.\n»De boekenplank.« Das auch – gerade eben, nach dem Telefonat.\n»Woensdag.«\nUnd: »Zij weet het nog niet.«\n\nEr wusste, was das bedeutete.\nEr hatte es nicht gewusst, als Jan es sagte.\nAber er wusste es jetzt."
+    },
+    {
+      "scene_index": 4,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "type": "inner_monologue",
+      "de_text": "Sieben Sätze. Vielleicht acht.\n\nMehr hatte er nicht verstanden.\n\nAber das war mehr, als er heute Morgen noch gedacht hätte.\n\nUnd das Bücherregal war echt. Der Auftrag war echt. Jan van der Berg war echt.\n\nDas zählte."
+    },
+    {
+      "scene_index": 4,
+      "speaker": "ERZÄHLER",
+      "speaker_role": "narrator",
+      "type": "narrator_text",
+      "de_text": "Was weniger eindeutig war: das Telefonat.\n\nJan hatte gesagt, das zusje – die Schwester seiner Frau – wisse es nicht. Aber das zusje hatte gerade angerufen.\n\nUnd danach hatte Jan anders gelächelt.\n\nNicht schlechter. Nur anders."
+    },
+    {
+      "scene_index": 4,
+      "speaker": "MARKUS",
+      "speaker_role": "protagonist",
+      "type": "inner_monologue",
+      "de_text": "Er stieg ins Auto. Startete den Motor.\n\nAm Mittwoch würde er die Zeichnungen bekommen.\nBis dahin –\n\n»Zij weet het nog niet.«\n\nEr saß noch immer da, Schlüssel in der Hand,\nals ihm aufging, dass er den Satz gerade\nauf Niederländisch gedacht hatte."
+    }
+  ],
+  "hooks": [
+    {
+      "id": "ep_01_hook_01_prediction",
+      "type": "PREDICTION",
+      "trigger": "scene_start",
+      "trigger_scene": 3,
+      "prompt_de": "Was glaubst du: Wer ruft Jan an?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Jans Frau Marta."
+        },
+        {
+          "key": "b",
+          "text": "Ein Geschäftspartner."
+        },
+        {
+          "key": "c",
+          "text": "Jans Schwägerin."
+        }
+      ]
+    },
+    {
+      "id": "ep_01_hook_02_continuation_choice",
+      "type": "CONTINUATION_CHOICE",
+      "trigger": "episode_end",
+      "prompt_de": "Was war das Problem mit dem Telefonat?",
+      "options": [
+        {
+          "key": "a",
+          "text": "Rein organisatorisch."
+        },
+        {
+          "key": "b",
+          "text": "Jans Schwägerin weiß von der Überraschung."
+        },
+        {
+          "key": "c",
+          "text": "Privates - nichts mit dem Auftrag."
+        }
+      ]
+    },
+    {
+      "id": "ep_01_hook_03_role_echo",
+      "type": "ROLE_ECHO",
+      "trigger": "episode_end",
+      "prompt_de": "Jan fragt: »Wilt u koffie?« – Du bist Markus. Was sagst du?"
+    }
+  ],
+  "spaced_hooks": [
+    {
+      "id": "ep_01_sh_24h",
+      "type": "SPACED_STORY_QUESTION",
+      "delay_hours": 24,
+      "prompt_de": "Weißt du noch, was Markus in Jans Büro bestellt hat? (Auf Niederländisch, wenn du magst.)"
+    },
+    {
+      "id": "ep_01_sh_72h",
+      "type": "SPACED_STORY_QUESTION",
+      "delay_hours": 72,
+      "prompt_de": "Jan wollte Markus etwas schicken. Was war das und wann?"
+    }
+  ],
+  "vocabulary_targets": [
+    {
+      "concept_id": "concept_greeting_formal_morning",
+      "nl_surface": "goedemorgen",
+      "de_cognate": "Guten Morgen",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 1,
+      "priority": 1
+    },
+    {
+      "concept_id": "concept_pronoun_formal_you",
+      "nl_surface": "u",
+      "de_cognate": "",
+      "is_false_friend": true,
+      "exposure_type": "first",
+      "scene_index": 1,
+      "priority": 1
+    },
+    {
+      "concept_id": "concept_particle_confirmation",
+      "nl_surface": "toch",
+      "de_cognate": "doch",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 1,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_enter_come_in",
+      "nl_surface": "kom binnen",
+      "de_cognate": "komm hinein",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 1,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_want_polite_formal",
+      "nl_surface": "wilt u",
+      "de_cognate": "wollen Sie",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 1,
+      "priority": 1
+    },
+    {
+      "concept_id": "concept_drink_coffee",
+      "nl_surface": "koffie",
+      "de_cognate": "Kaffee",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 1,
+      "priority": 1
+    },
+    {
+      "concept_id": "concept_politeness_please_gladly",
+      "nl_surface": "graag",
+      "de_cognate": "",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 1,
+      "priority": 1
+    },
+    {
+      "concept_id": "concept_conjunction_or",
+      "nl_surface": "of",
+      "de_cognate": "oder",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 1,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_preference_rather",
+      "nl_surface": "liever",
+      "de_cognate": "lieber",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 1,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_drink_tea",
+      "nl_surface": "thee",
+      "de_cognate": "Tee",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 1,
+      "priority": 3
+    },
+    {
+      "concept_id": "concept_communication_discuss",
+      "nl_surface": "bespreken",
+      "de_cognate": "besprechen",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_material_wood",
+      "nl_surface": "hout / houten",
+      "de_cognate": "Holz / hölzern",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_furniture_stairs",
+      "nl_surface": "trap",
+      "de_cognate": "Treppe",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 3
+    },
+    {
+      "concept_id": "concept_furniture_bookshelf",
+      "nl_surface": "boekenplank",
+      "de_cognate": "",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_crafts_custom_made",
+      "nl_surface": "op maat",
+      "de_cognate": "auf Maß",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 3
+    },
+    {
+      "concept_id": "concept_noun_drawings",
+      "nl_surface": "tekeningen",
+      "de_cognate": "Zeichnungen",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_verb_become",
+      "nl_surface": "wordt",
+      "de_cognate": "wird",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_noun_collaboration",
+      "nl_surface": "samenwerking",
+      "de_cognate": "Zusammenarbeit",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 3
+    },
+    {
+      "concept_id": "concept_affirmation_exactly",
+      "nl_surface": "precies",
+      "de_cognate": "genau",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_adjective_nice",
+      "nl_surface": "mooie",
+      "de_cognate": "",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 3
+    },
+    {
+      "concept_id": "concept_discourse_marker_one_more_thing",
+      "nl_surface": "nog één ding",
+      "de_cognate": "noch eine Sache",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_noun_surprise",
+      "nl_surface": "verrassing",
+      "de_cognate": "Überraschung",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_family_wife",
+      "nl_surface": "vrouw",
+      "de_cognate": "Frau",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_negation_not",
+      "nl_surface": "niet",
+      "de_cognate": "nicht",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 1
+    },
+    {
+      "concept_id": "concept_verb_know",
+      "nl_surface": "weet",
+      "de_cognate": "weiß",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_politeness_thanks_informal",
+      "nl_surface": "dankjewel",
+      "de_cognate": "danke dir wohl",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_politeness_thanks_formal",
+      "nl_surface": "dankuwel",
+      "de_cognate": "danke Ihnen wohl",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 1
+    },
+    {
+      "concept_id": "concept_verb_send_formal",
+      "nl_surface": "stuur / sturen",
+      "de_cognate": "schicke / schicken",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_time_wednesday",
+      "nl_surface": "woensdag",
+      "de_cognate": "Mittwoch",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_affirmation_great",
+      "nl_surface": "prima",
+      "de_cognate": "prima",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 1
+    },
+    {
+      "concept_id": "concept_place_germany",
+      "nl_surface": "Duitsland",
+      "de_cognate": "Deutschland",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 2,
+      "priority": 3
+    },
+    {
+      "concept_id": "concept_time_moment",
+      "nl_surface": "eén moment",
+      "de_cognate": "ein Moment",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 3,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_pronoun_possessive_her",
+      "nl_surface": "haar",
+      "de_cognate": "ihr / ihre",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 3,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_family_sister_diminutive",
+      "nl_surface": "zusje",
+      "de_cognate": "",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 3,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_affirmation_exactly_not",
+      "nl_surface": "dat klopt niet",
+      "de_cognate": "das stimmt nicht",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 3,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_imperative_listen",
+      "nl_surface": "luister",
+      "de_cognate": "hör zu",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 3,
+      "priority": 3
+    },
+    {
+      "concept_id": "concept_state_ready",
+      "nl_surface": "klaar",
+      "de_cognate": "fertig / klar",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 3,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_pronoun_third_person_she",
+      "nl_surface": "zij",
+      "de_cognate": "sie",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 3,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_apology_sorry",
+      "nl_surface": "sorry",
+      "de_cognate": "Entschuldigung / sorry",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 3,
+      "priority": 1
+    },
+    {
+      "concept_id": "concept_discourse_where_were_we",
+      "nl_surface": "waar waren we",
+      "de_cognate": "wo waren wir",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 3,
+      "priority": 2
+    },
+    {
+      "concept_id": "concept_verb_receive",
+      "nl_surface": "krijgt",
+      "de_cognate": "bekommt / kriegt",
+      "is_false_friend": false,
+      "exposure_type": "first",
+      "scene_index": 3,
+      "priority": 2
+    }
+  ],
+  "didactic_meta": {
+    "patterns_used": [
+      "narrative_transportation",
+      "emotional_anchoring",
+      "self_reference",
+      "situated_learning",
+      "positive_prediction_error",
+      "von_restorff",
+      "elaborative_interrogation",
+      "cliffhanger_curiosity_gap",
+      "prediction_interruption",
+      "spaced_retrieval",
+      "output_hypothesis"
+    ],
+    "cognate_density": 0.72,
+    "difficulty_level": 1,
+    "prerequisite_episodes": [],
+    "cliffhanger_type": "NARRATIVE",
+    "production_notes": "Szene A: reine Erzählerszene, kein Interlinear. Szene B: Jan spricht leicht verlangsamt; Markus’ erster NL-Satz. Szene C: professionelle Verbindung über Thoma Holz; dankjewel/dankuwel-Korrektur als Von-Restorff-Anker; Woensdag und Boekenplank als Anker für Szene D. Szene D: Block D.4 (Telefonat) hat has_reveal_button: false – keine DE-Anzeige; bewusster Überforderungsmoment. Sprechtempo D.4: normal bis schnell, kein Pause-für-Lernende. Szene E: interlinear_enabled: false – NL-Wörter im DE-Text erscheinen ohne Interlinear als Klangerinnerungen. Alle start_ms sind Platzhalter bis Audio-Produktion abgeschlossen. audio_src nach Produktion befüllen."
+  },
+  "concepts": [
+    {
+      "concept_id": "concept_greeting_formal_morning",
+      "label_de": "Guten Morgen (formell)",
+      "label_nl": "goedemorgen",
+      "kind": "phrase",
+      "related_concepts": [
+        "concept_greeting_formal_afternoon",
+        "concept_greeting_informal_morning"
+      ]
+    },
+    {
+      "concept_id": "concept_pronoun_formal_you",
+      "label_de": "Sie / Ihr (formell)",
+      "label_nl": "u / uw",
+      "kind": "grammar",
+      "related_concepts": [
+        "concept_pronoun_informal_you"
+      ]
+    },
+    {
+      "concept_id": "concept_particle_confirmation",
+      "label_de": "Bestätigungspartikel: doch / oder?",
+      "label_nl": "toch",
+      "kind": "grammar",
+      "related_concepts": []
+    },
+    {
+      "concept_id": "concept_enter_come_in",
+      "label_de": "hereinkommen",
+      "label_nl": "kom binnen",
+      "kind": "phrase",
+      "related_concepts": []
+    },
+    {
+      "concept_id": "concept_want_polite_formal",
+      "label_de": "möchten Sie (formell)",
+      "label_nl": "wilt u",
+      "kind": "phrase",
+      "related_concepts": [
+        "concept_want_polite_informal"
+      ]
+    },
+    {
+      "concept_id": "concept_drink_coffee",
+      "label_de": "Kaffee",
+      "label_nl": "koffie",
+      "kind": "object",
+      "related_concepts": [
+        "concept_drink_tea"
+      ]
+    },
+    {
+      "concept_id": "concept_politeness_please_gladly",
+      "label_de": "gerne / bitte",
+      "label_nl": "graag",
+      "kind": "word",
+      "related_concepts": [
+        "concept_politeness_please_formal"
+      ]
+    },
+    {
+      "concept_id": "concept_conjunction_or",
+      "label_de": "oder",
+      "label_nl": "of",
+      "kind": "grammar",
+      "related_concepts": []
+    },
+    {
+      "concept_id": "concept_preference_rather",
+      "label_de": "lieber",
+      "label_nl": "liever",
+      "kind": "word",
+      "related_concepts": []
+    },
+    {
+      "concept_id": "concept_drink_tea",
+      "label_de": "Tee",
+      "label_nl": "thee",
+      "kind": "object",
+      "related_concepts": [
+        "concept_drink_coffee"
+      ]
+    },
+    {
+      "concept_id": "concept_communication_discuss",
+      "label_de": "besprechen / Besprechung",
+      "label_nl": "bespreken",
+      "kind": "word",
+      "related_concepts": []
+    },
+    {
+      "concept_id": "concept_material_wood",
+      "label_de": "Holz / hölzern",
+      "label_nl": "hout / houten",
+      "kind": "object",
+      "related_concepts": [
+        "concept_material_holz100",
+        "concept_natural_building"
+      ]
+    },
+    {
+      "concept_id": "concept_furniture_stairs",
+      "label_de": "Treppe",
+      "label_nl": "trap",
+      "kind": "object",
+      "related_concepts": [
+        "concept_furniture_bookshelf"
+      ]
+    },
+    {
+      "concept_id": "concept_furniture_bookshelf",
+      "label_de": "Bücherregal",
+      "label_nl": "boekenplank",
+      "kind": "object",
+      "related_concepts": [
+        "concept_furniture_stairs",
+        "concept_noun_drawings"
+      ]
+    },
+    {
+      "concept_id": "concept_crafts_custom_made",
+      "label_de": "nach Maß / maßgefertigt",
+      "label_nl": "op maat",
+      "kind": "phrase",
+      "related_concepts": [
+        "concept_material_wood"
+      ]
+    },
+    {
+      "concept_id": "concept_noun_drawings",
+      "label_de": "Zeichnungen",
+      "label_nl": "tekeningen",
+      "kind": "object",
+      "related_concepts": [
+        "concept_furniture_bookshelf",
+        "concept_furniture_stairs"
+      ]
+    },
+    {
+      "concept_id": "concept_verb_become",
+      "label_de": "werden / wird",
+      "label_nl": "worden / wordt",
+      "kind": "grammar",
+      "related_concepts": [
+        "concept_noun_collaboration"
+      ]
+    },
+    {
+      "concept_id": "concept_noun_collaboration",
+      "label_de": "Zusammenarbeit",
+      "label_nl": "samenwerking",
+      "kind": "word",
+      "related_concepts": [
+        "concept_verb_work_with"
+      ]
+    },
+    {
+      "concept_id": "concept_affirmation_exactly",
+      "label_de": "genau / präzise",
+      "label_nl": "precies",
+      "kind": "word",
+      "related_concepts": [
+        "concept_affirmation_yes",
+        "concept_affirmation_great"
+      ]
+    },
+    {
+      "concept_id": "concept_adjective_nice",
+      "label_de": "schön / hübsch",
+      "label_nl": "mooi / mooie",
+      "kind": "word",
+      "related_concepts": []
+    },
+    {
+      "concept_id": "concept_discourse_marker_one_more_thing",
+      "label_de": "noch eine Sache",
+      "label_nl": "nog één ding",
+      "kind": "phrase",
+      "related_concepts": [
+        "concept_particle_confirmation"
+      ]
+    },
+    {
+      "concept_id": "concept_noun_surprise",
+      "label_de": "Überraschung",
+      "label_nl": "verrassing",
+      "kind": "word",
+      "related_concepts": [
+        "concept_family_wife"
+      ]
+    },
+    {
+      "concept_id": "concept_family_wife",
+      "label_de": "Frau / Ehefrau",
+      "label_nl": "vrouw",
+      "kind": "word",
+      "related_concepts": [
+        "concept_noun_surprise"
+      ]
+    },
+    {
+      "concept_id": "concept_negation_not",
+      "label_de": "nicht",
+      "label_nl": "niet",
+      "kind": "grammar",
+      "related_concepts": []
+    },
+    {
+      "concept_id": "concept_verb_know",
+      "label_de": "wissen / weiß",
+      "label_nl": "weten / weet",
+      "kind": "word",
+      "related_concepts": [
+        "concept_negation_not"
+      ]
+    },
+    {
+      "concept_id": "concept_politeness_thanks_informal",
+      "label_de": "Danke (informell, du-Form)",
+      "label_nl": "dankjewel",
+      "kind": "phrase",
+      "related_concepts": [
+        "concept_politeness_thanks_formal",
+        "concept_pronoun_informal_you"
+      ]
+    },
+    {
+      "concept_id": "concept_politeness_thanks_formal",
+      "label_de": "Danke (formell, Sie-Form)",
+      "label_nl": "dankuwel",
+      "kind": "phrase",
+      "related_concepts": [
+        "concept_politeness_thanks_informal",
+        "concept_pronoun_formal_you"
+      ]
+    },
+    {
+      "concept_id": "concept_verb_send_formal",
+      "label_de": "schicken (formell)",
+      "label_nl": "sturen / stuur",
+      "kind": "word",
+      "related_concepts": [
+        "concept_noun_drawings"
+      ]
+    },
+    {
+      "concept_id": "concept_time_wednesday",
+      "label_de": "Mittwoch",
+      "label_nl": "woensdag",
+      "kind": "word",
+      "related_concepts": [
+        "concept_time_today"
+      ]
+    },
+    {
+      "concept_id": "concept_affirmation_great",
+      "label_de": "prima / ausgezeichnet",
+      "label_nl": "prima",
+      "kind": "word",
+      "related_concepts": [
+        "concept_affirmation_yes",
+        "concept_affirmation_exactly"
+      ]
+    },
+    {
+      "concept_id": "concept_place_germany",
+      "label_de": "Deutschland",
+      "label_nl": "Duitsland",
+      "kind": "word",
+      "related_concepts": []
+    },
+    {
+      "concept_id": "concept_material_holz100",
+      "label_de": "Holz100 / Massivholzbausystem (Thoma)",
+      "label_nl": "Holz100",
+      "kind": "cultural",
+      "related_concepts": [
+        "concept_material_wood",
+        "concept_natural_building"
+      ]
+    },
+    {
+      "concept_id": "concept_natural_building",
+      "label_de": "natürliches Bauen / Ökobau",
+      "label_nl": "natuurlijk bouwen",
+      "kind": "cultural",
+      "related_concepts": [
+        "concept_material_holz100",
+        "concept_material_wood"
+      ]
+    },
+    {
+      "concept_id": "concept_verb_work_with",
+      "label_de": "damit arbeiten / damit umgehen",
+      "label_nl": "mee werken / werken mee",
+      "kind": "phrase",
+      "related_concepts": [
+        "concept_noun_collaboration"
+      ]
+    },
+    {
+      "concept_id": "concept_time_moment",
+      "label_de": "ein Moment / Augenblick",
+      "label_nl": "eén moment",
+      "kind": "phrase",
+      "related_concepts": [
+        "concept_time_wednesday",
+        "concept_time_today"
+      ]
+    },
+    {
+      "concept_id": "concept_pronoun_possessive_her",
+      "label_de": "ihr / ihre (Possessivpronomen, 3. Person fem.)",
+      "label_nl": "haar",
+      "kind": "grammar",
+      "related_concepts": [
+        "concept_pronoun_third_person_she",
+        "concept_pronoun_formal_you"
+      ]
+    },
+    {
+      "concept_id": "concept_family_sister_diminutive",
+      "label_de": "jüngere Schwester / Schwesterchen",
+      "label_nl": "zusje",
+      "kind": "word",
+      "related_concepts": [
+        "concept_family_wife",
+        "concept_pronoun_possessive_her"
+      ]
+    },
+    {
+      "concept_id": "concept_affirmation_exactly_not",
+      "label_de": "das stimmt nicht / das klappt nicht",
+      "label_nl": "dat klopt niet",
+      "kind": "phrase",
+      "related_concepts": [
+        "concept_negation_not",
+        "concept_affirmation_exactly"
+      ]
+    },
+    {
+      "concept_id": "concept_imperative_listen",
+      "label_de": "hör zu / hören Sie",
+      "label_nl": "luister / luister eens",
+      "kind": "word",
+      "related_concepts": []
+    },
+    {
+      "concept_id": "concept_state_ready",
+      "label_de": "fertig / bereit",
+      "label_nl": "klaar",
+      "kind": "word",
+      "related_concepts": [
+        "concept_affirmation_great"
+      ]
+    },
+    {
+      "concept_id": "concept_pronoun_third_person_she",
+      "label_de": "sie (3. Person Singular fem.)",
+      "label_nl": "zij",
+      "kind": "grammar",
+      "related_concepts": [
+        "concept_pronoun_possessive_her",
+        "concept_family_wife"
+      ]
+    },
+    {
+      "concept_id": "concept_apology_sorry",
+      "label_de": "Entschuldigung / Verzeihung",
+      "label_nl": "sorry",
+      "kind": "word",
+      "related_concepts": []
+    },
+    {
+      "concept_id": "concept_discourse_where_were_we",
+      "label_de": "wo waren wir / wo waren wir geblieben",
+      "label_nl": "waar waren we",
+      "kind": "phrase",
+      "related_concepts": [
+        "concept_discourse_marker_one_more_thing"
+      ]
+    },
+    {
+      "concept_id": "concept_verb_receive",
+      "label_de": "bekommen / erhalten / kriegen",
+      "label_nl": "krijgen / krijgt",
+      "kind": "word",
+      "related_concepts": [
+        "concept_verb_send_formal"
+      ]
+    }
+  ]
+}

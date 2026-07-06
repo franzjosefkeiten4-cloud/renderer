@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Keiten Experience Engine</title>
+  <link rel="stylesheet" href="css/renderer.css">
+</head>
+<body>
+
+<div id="kee-app">
+
+  <!-- Header -->
+  <header id="kee-header">
+    <div id="kee-arc-label"></div>
+    <div id="kee-scene-indicator"></div>
+  </header>
+
+  <!-- Main content – rendered entirely from JSON, nothing hard-coded here -->
+  <main id="kee-stage" aria-live="polite"></main>
+
+  <!-- Bottom navigation -->
+  <nav id="kee-nav" aria-label="Episodennavigation">
+    <button id="kee-btn-prev" class="nav-btn" aria-label="Vorherige Szene">← Zurück</button>
+    <button id="kee-btn-next" class="nav-btn nav-btn--primary" aria-label="Nächste Szene">Weiter →</button>
+  </nav>
+
+  <!-- Hook overlay (hidden until triggered) -->
+  <div id="kee-hook-overlay" class="hook-overlay hidden" role="dialog" aria-modal="true"></div>
+
+  <!-- Error message (hidden unless load fails) -->
+  <div id="kee-error" class="kee-error hidden" role="alert"></div>
+
+  <!-- Debug info (shown at bottom-right) -->
+  <div id="kee-debug" aria-hidden="true"></div>
+
+</div>
+
+<!-- Scripts – order matters: adapter first, loader + renderer before app -->
+<script src="js/trackingAdapter.js"></script>
+<script src="js/jsonLoader.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/hookEngine.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
