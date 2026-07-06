@@ -53,7 +53,7 @@
       "speaker": "ERZÄHLER",
       "speaker_role": "narrator",
       "type": "narrator_text",
-      "de_text": "Markus parkt sein Auto in einer kleinen Gasse hinter dem Marktplatz. Er ist zehn Minuten zu früh. Er lässt das Radio noch laufen. Er weiß alles – außer wie er sich auf Niederländisch vorstellen soll. Er atmet durch, nimmt seine Mappe und geht."
+      "de_text": "Markus parkt sein Auto in einer kleinen Gasse hinter dem Marktplatz. Zehn Minuten zu früh. Er lässt das Radio noch laufen.\n\nDraußen: Fahrräder, Fahrräder, Fahrräder.\n\nEr nimmt seine Mappe. Atmet einmal durch. Und geht."
     },
     {
       "scene_index": 1,
@@ -71,7 +71,7 @@
       "speaker": "MARKUS",
       "speaker_role": "protagonist",
       "type": "inner_monologue",
-      "de_text": "Goedemorgen – Guten Morgen. Das war klar. Toch – doch – „oder“. Kom binnen – herein. Das war… eigentlich nicht so schwer."
+      "de_text": "Fast alles davon hatte er verstanden. Toch klang wie doch. Kom binnen wie herein. Er hatte die Wörter begriffen, bevor er sie sich erklären konnte.\n\nDas überraschte ihn."
     },
     {
       "scene_index": 1,
@@ -110,7 +110,7 @@
       "speaker": "MARKUS",
       "speaker_role": "protagonist",
       "type": "inner_monologue",
-      "de_text": "Vandaag. Van… dag. Vom Tag. Heute. Und bespreken – besprechen. Er kannte das. Dieser Mann sprach fast Deutsch."
+      "de_text": "Fast wie Deutsch. Vandaag – heute. Bespreken – besprechen. Markus verstand die Wörter, ehe er sie sich erklären konnte.\n\nDieser Mann sprach fast Deutsch."
     },
     {
       "scene_index": 2,
@@ -205,7 +205,7 @@
       "speaker": "MARKUS",
       "speaker_role": "protagonist",
       "type": "inner_monologue",
-      "de_text": "Dankjewel – du. Dankuwel – Sie. Fast wie im Deutschen: danke dir, danke Ihnen. Er hatte den falschen gewählt. Aber Jan hatte nicht gelacht. Er hatte geholfen."
+      "de_text": "Er hatte das falsche genommen. Dankjewel für du, dankuwel für Sie – fast wie im Deutschen, und er hatte es trotzdem falsch gemacht.\n\nJan hatte ihn korrigiert, ohne ihn zu beschämen. Das war ihm nicht entgangen."
     },
     {
       "scene_index": 2,
@@ -234,7 +234,7 @@
       "speaker": "ERZÄHLER",
       "speaker_role": "narrator",
       "type": "narrator_text",
-      "de_text": "Jans Handy vibriert auf dem Tisch. Er schaut auf das Display. Sein Gesichtsausdruck verändert sich – kaum sichtbar, aber Markus bemerkt es. Ein kurzes Zögern. Dann nimmt er an."
+      "de_text": "Jans Handy vibriert auf dem Tisch. Er schaut kurz auf das Display.\n\nSein Gesichtsausdruck verändert sich – kaum. Aber Markus bemerkt es.\n\nEin kurzes Zögern. Dann nimmt er an."
     },
     {
       "scene_index": 3,
@@ -252,7 +252,7 @@
       "speaker": "MARKUS",
       "speaker_role": "protagonist",
       "type": "inner_monologue",
-      "de_text": "Zusje. Das Wort hatte er noch nie gehört. Kleine Schwester? Schwägerin? Und warum hatte Jan so… kurz gezögert, bevor er ans Telefon gegangen war?"
+      "de_text": "Zusje. Kleine Schwester? Schwägerin?\n\nUnd warum hatte Jan gezögert?"
     },
     {
       "scene_index": 3,
@@ -324,7 +324,7 @@
       "speaker": "MARKUS",
       "speaker_role": "protagonist",
       "type": "inner_monologue",
-      "de_text": "Sieben Sätze. Vielleicht acht.\n\nMehr hatte er nicht verstanden.\n\nAber das war mehr, als er heute Morgen noch gedacht hätte.\n\nUnd das Bücherregal war echt. Der Auftrag war echt. Jan van der Berg war echt.\n\nDas zählte."
+      "de_text": "Sieben Sätze. Vielleicht acht.\n\nMehr hatte er nicht verstanden.\n\nEs war mehr, als er erwartet hatte.\n\nUnd das Bücherregal war echt. Der Auftrag war echt. Jan van der Berg war echt.\n\nDas zählte."
     },
     {
       "scene_index": 4,
@@ -347,7 +347,7 @@
       "type": "PREDICTION",
       "trigger": "scene_start",
       "trigger_scene": 3,
-      "prompt_de": "Was glaubst du: Wer ruft Jan an?",
+      "prompt_de": "Gleich klingelt Jans Handy. Wer ist das – was glaubst du?",
       "options": [
         {
           "key": "a",
@@ -367,7 +367,7 @@
       "id": "ep_01_hook_02_continuation_choice",
       "type": "CONTINUATION_CHOICE",
       "trigger": "episode_end",
-      "prompt_de": "Was war das Problem mit dem Telefonat?",
+      "prompt_de": "Warum hatte Jan danach anders gelächelt?",
       "options": [
         {
           "key": "a",
@@ -387,7 +387,7 @@
       "id": "ep_01_hook_03_role_echo",
       "type": "ROLE_ECHO",
       "trigger": "episode_end",
-      "prompt_de": "Jan fragt: »Wilt u koffie?« – Du bist Markus. Was sagst du?"
+      "prompt_de": "Jan fragt: »Wilt u koffie?« – Was antwortest du?"
     }
   ],
   "spaced_hooks": [
