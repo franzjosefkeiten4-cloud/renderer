@@ -736,3 +736,64 @@ body {
 
 /* ── Kein arc-label oder interne IDs sichtbar ─────────────── */
 /* arc_id etc. wurden aus dem Player-Header entfernt in v0.2 */
+
+
+/* =========================================================
+   v0.3 – Philosophie sichtbar machen
+   ========================================================= */
+
+/* ── Welcome: story block loses its border-box feel ─────── */
+/* Override v0.2 border styling to feel more like a book */
+.welcome-story {
+  border-top: none;
+  border-bottom: none;
+  padding: 0;
+  gap: 12px;
+}
+
+/* Separator between story and philosophy: a single thin line */
+.welcome-story::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--k-border);
+  margin-top: 6px;
+}
+
+/* ── Philosophy block ────────────────────────────────────── */
+.welcome-philosophy {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--k-muted);
+  font-style: italic;
+}
+
+/* ── Reassurance: quieter, centered, not defensive ──────── */
+/* Override v0.2 text-align: center with refined styling */
+.welcome-reassurance {
+  font-size: 13px;
+  color: var(--k-muted);
+  line-height: 1.6;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  opacity: 0.8;
+  padding: 0;
+}
+
+/* ── Kicker: location, not a label ──────────────────────── */
+/* welcome-kicker styling updated – olive removed, quieter */
+.welcome-kicker {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--k-muted);       /* was --k-olive in v0.2 */
+}
+
+/* ── Meta: remove CEFR level prominence ─────────────────── */
+/* welcome-meta keeps existing style; Niveau A1 removed in HTML */
