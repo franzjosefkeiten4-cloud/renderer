@@ -82,6 +82,9 @@ Technik dient ausschließlich der Geschichte.
 10.
 Der Nutzer soll weiterlesen wollen.
 
+11.
+Der Lerner darf niemals interne Produktions- oder Technikdetails sehen.
+
 ---
 
 # Entwicklungsprozess
