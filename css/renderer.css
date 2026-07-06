@@ -449,3 +449,290 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
 }
+
+
+/* =========================================================
+   v0.2 Additions
+   ========================================================= */
+
+/* ── Welcome screen ──────────────────────────────────────── */
+#kee-welcome {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 48px;
+}
+
+.welcome-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 48px var(--gap) 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.welcome-kicker {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--k-olive);
+}
+
+.welcome-title {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 6vw, 42px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--k-dark);
+  letter-spacing: -0.01em;
+}
+
+.welcome-subtitle {
+  font-size: 17px;
+  color: var(--k-muted);
+  line-height: 1.55;
+  font-style: italic;
+}
+
+.welcome-story {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 0;
+  border-top: 1px solid var(--k-border);
+  border-bottom: 1px solid var(--k-border);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--k-dark);
+}
+
+.welcome-goal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome-goal-title {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--k-muted);
+}
+
+.welcome-goal-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.welcome-goal-list li {
+  font-size: 15px;
+  color: var(--k-dark);
+  padding-left: 4px;
+  line-height: 1.4;
+}
+
+.welcome-howto {
+  background: rgba(119, 128, 51, 0.07);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.welcome-howto-title {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--k-olive);
+}
+
+.welcome-howto-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome-howto-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--k-dark);
+}
+
+.howto-num {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  background: var(--k-olive);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 1px;
+}
+
+.welcome-reassurance {
+  font-size: 14px;
+  color: var(--k-muted);
+  line-height: 1.55;
+  text-align: center;
+  padding: 4px 0;
+}
+
+.btn-start {
+  width: 100%;
+  min-height: 54px;
+  background: var(--k-dark);
+  color: var(--k-cream);
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background 0.15s;
+}
+.btn-start:hover  { background: #222210; }
+.btn-start:active { background: #0a0a00; }
+.btn-start:focus-visible { outline: 3px solid var(--k-olive); outline-offset: 3px; }
+
+.welcome-meta {
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--k-muted);
+  letter-spacing: 0.04em;
+}
+
+/* ── Player wrapper ──────────────────────────────────────── */
+#kee-player {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Progress bar ────────────────────────────────────────── */
+#kee-header {
+  position: sticky;
+  top: 0;
+  background: var(--k-cream);
+  z-index: 40;
+  padding: 10px var(--gap) 8px;
+  border-bottom: 1px solid var(--k-border);
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#kee-progress-bar {
+  width: 100%;
+  height: 3px;
+  background: var(--k-border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+#kee-progress-fill {
+  height: 100%;
+  background: var(--k-olive);
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.35s ease;
+}
+
+#kee-progress-label {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--k-muted);
+  letter-spacing: 0.04em;
+}
+
+/* ── Layer labels: updated for full words ────────────────── */
+.kee-layer-label {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--k-muted);
+  text-transform: uppercase;
+}
+
+/* ── Richer completion screen ────────────────────────────── */
+.kee-completion {
+  text-align: center;
+  padding: 48px 20px 40px;
+}
+
+.completion-icon {
+  width: 56px;
+  height: 56px;
+  background: #C6EFCE;
+  color: #1E4620;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 auto 20px;
+}
+
+.completion-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: var(--k-dark);
+}
+
+.completion-intro {
+  font-size: 16px;
+  color: var(--k-muted);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.completion-list {
+  list-style: none;
+  text-align: left;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+  max-width: 360px;
+}
+
+.completion-list li {
+  font-size: 15px;
+  color: var(--k-dark);
+  line-height: 1.4;
+}
+
+.completion-next {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--k-muted);
+  letter-spacing: 0.04em;
+}
+
+/* ── Kein arc-label oder interne IDs sichtbar ─────────────── */
+/* arc_id etc. wurden aus dem Player-Header entfernt in v0.2 */
