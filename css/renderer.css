@@ -797,3 +797,62 @@ body {
 
 /* ── Meta: remove CEFR level prominence ─────────────────── */
 /* welcome-meta keeps existing style; Niveau A1 removed in HTML */
+
+
+/* =========================================================
+   v1.0 – Narrative completion screen
+   ========================================================= */
+
+.completion-drive {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--k-dark);
+  margin-bottom: 16px;
+}
+
+.completion-memory {
+  font-size: 16px;
+  color: var(--k-muted);
+  line-height: 1.65;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.completion-open {
+  font-size: 16px;
+  color: var(--k-dark);
+  font-style: italic;
+  margin-bottom: 28px;
+}
+
+.completion-rule {
+  width: 160px;
+  height: 1px;
+  background: var(--k-border);
+  margin: 0 auto 24px;
+}
+
+.completion-anchor {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--k-blue);
+  line-height: 1.5;
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+}
+
+.completion-next {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--k-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Override v0.2 completion styles that no longer apply */
+.completion-title,
+.completion-intro,
+.completion-list,
+.completion-icon {
+  display: none;
+}
