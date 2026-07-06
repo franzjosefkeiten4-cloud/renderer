@@ -142,7 +142,7 @@ const KeeRenderer = {
 
       const nlLabel = document.createElement('div');
       nlLabel.className = 'kee-layer-label';
-      nlLabel.textContent = 'NL';
+      nlLabel.textContent = 'Niederländisch';
 
       const nlText = document.createElement('div');
       nlText.className = 'kee-nl-text';
@@ -167,7 +167,7 @@ const KeeRenderer = {
 
       const wwLabel = document.createElement('div');
       wwLabel.className = 'kee-layer-label';
-      wwLabel.textContent = 'WW';
+      wwLabel.textContent = 'Wort für Wort';
 
       const wwText = document.createElement('div');
       wwText.className = 'kee-ww-text';
@@ -189,7 +189,7 @@ const KeeRenderer = {
 
       const deLabel = document.createElement('div');
       deLabel.className = 'kee-layer-label';
-      deLabel.textContent = 'DE';
+      deLabel.textContent = 'Deutsch';
 
       const deText = document.createElement('div');
       deText.className = 'kee-de-text kee-de-hidden';

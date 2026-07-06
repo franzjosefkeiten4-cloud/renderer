@@ -1,14 +1,13 @@
 /**
- * app.js – Keiten Experience Engine
+ * app.js – Keiten Experience Engine v0.2
  *
- * Main orchestrator. Loaded last, after all other scripts.
- *
- * Responsibilities:
- * - Load episode JSON via KeeJsonLoader
- * - Initialize scene navigation
- * - Coordinate KeeRenderer, KeeHookEngine, KeeTrack
- * - Show debug info and errors
- * - Never crash; always show a human-readable message on failure
+ * Changes from v0.1:
+ * - Welcome screen shown first; episode starts on button click
+ * - Debug panel hidden in production (visible only with ?debug=1)
+ * - Progress bar updates with each scene
+ * - arc_id and internal IDs never shown to learners
+ * - Richer completion screen
+ * - Estimated duration from episode JSON (estimated_duration_minutes)
  */
 
 (async function KeeApp() {
@@ -16,52 +15,70 @@
 
   const EPISODE_URL = 'episodes/episode-01.json';
 
-  // ── DOM refs ────────────────────────────────────────────
-  const stage          = document.getElementById('kee-stage');
-  const arcLabel       = document.getElementById('kee-arc-label');
-  const sceneIndicator = document.getElementById('kee-scene-indicator');
-  const btnPrev        = document.getElementById('kee-btn-prev');
-  const btnNext        = document.getElementById('kee-btn-next');
-  const debugEl        = document.getElementById('kee-debug');
-  const errorEl        = document.getElementById('kee-error');
+  // ── Debug mode: only active when URL contains ?debug=1 ──────
+  const IS_DEBUG = new URLSearchParams(window.location.search).get('debug') === '1';
 
-  // ── State ────────────────────────────────────────────────
-  let episode          = null;
-  let currentArrayIdx  = 0;   // Position in episode.scenes[] (0-based)
+  // ── DOM refs ─────────────────────────────────────────────────
+  const welcomeEl     = document.getElementById('kee-welcome');
+  const playerEl      = document.getElementById('kee-player');
+  const btnStart      = document.getElementById('kee-btn-start');
+  const stage         = document.getElementById('kee-stage');
+  const progressFill  = document.getElementById('kee-progress-fill');
+  const progressLabel = document.getElementById('kee-progress-label');
+  const btnPrev       = document.getElementById('kee-btn-prev');
+  const btnNext       = document.getElementById('kee-btn-next');
+  const debugEl       = document.getElementById('kee-debug');
+  const errorEl       = document.getElementById('kee-error');
 
-  // ── Load episode ────────────────────────────────────────
+  // ── State ─────────────────────────────────────────────────────
+  let episode         = null;
+  let currentArrayIdx = 0;
+
+  // ── Load episode (happens immediately, before welcome is dismissed) ─
+  let loadError = null;
   try {
     episode = await KeeJsonLoader.load(EPISODE_URL);
-  } catch (loadError) {
+  } catch (e) {
+    loadError = e;
+  }
+
+  // ── Debug panel (only when ?debug=1) ────────────────────────
+  if (IS_DEBUG && debugEl) {
+    debugEl.classList.remove('hidden');
+    if (loadError) {
+      debugEl.textContent = 'Fehler: ' + loadError.message.slice(0, 80);
+    } else if (episode) {
+      debugEl.textContent =
+        `Episode geladen: ${episode.episode_id} · Szenen: ${episode.scenes.length} · Blöcke: ${episode.dialogue.length}`;
+    }
+  }
+
+  // ── Handle load failure ──────────────────────────────────────
+  if (loadError) {
     showError(loadError.message);
     return;
   }
 
-  // ── Validate minimum structure ──────────────────────────
   if (!episode || !Array.isArray(episode.scenes) || episode.scenes.length === 0) {
-    showError(
-      `Die geladene Datei „${EPISODE_URL}" enthält keine Szenen.\n` +
-      `Erwartet: ein episodes[]-Array mit mindestens einer Szene.`
-    );
+    showError('Die Episode konnte nicht geladen werden (keine Szenen gefunden).');
     return;
   }
   if (!Array.isArray(episode.dialogue)) {
-    showError(`Die geladene Datei enthält kein dialogue[]-Array.`);
+    showError('Die Episode konnte nicht geladen werden (keine Dialoge gefunden).');
     return;
   }
 
-  // ── Debug info ──────────────────────────────────────────
   const totalScenes = episode.scenes.length;
-  const totalBlocks = episode.dialogue.length;
-  debugEl.textContent =
-    `Episode geladen: ${episode.episode_id} · Szenen: ${totalScenes} · Blöcke: ${totalBlocks}`;
 
-  // ── Header ──────────────────────────────────────────────
-  if (arcLabel) {
-    arcLabel.textContent = (episode.arc_id || episode.episode_id || '').toUpperCase();
-  }
+  // ── Start button ─────────────────────────────────────────────
+  btnStart.addEventListener('click', () => {
+    welcomeEl.classList.add('hidden');
+    playerEl.classList.remove('hidden');
+    navigateTo(0);
+    window.scrollTo(0, 0);
+  });
 
-  // ── Navigation event listeners ──────────────────────────
+  // ── Navigation listeners ─────────────────────────────────────
   btnPrev.addEventListener('click', () => {
     if (currentArrayIdx > 0) navigateTo(currentArrayIdx - 1);
   });
@@ -74,33 +91,21 @@
     }
   });
 
-  // ── Initial render ──────────────────────────────────────
-  navigateTo(0);
-
-  // ════════════════════════════════════════════════════════
+  // ════════════════════════════════════════════════════════════
   // Core functions
-  // ════════════════════════════════════════════════════════
+  // ════════════════════════════════════════════════════════════
 
-  /**
-   * Navigate to a scene by its array index.
-   * Checks for scene_start hooks before rendering.
-   */
   function navigateTo(arrayIdx) {
     currentArrayIdx = arrayIdx;
-
     const scene = episode.scenes[arrayIdx];
     if (!scene) return;
 
-    // Update navigation controls
     updateNav(arrayIdx);
-
-    // Scroll to top of content
+    updateProgress(arrayIdx);
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // Check for scene_start hooks first, render after
     KeeHookEngine.checkSceneStartHooks(episode, scene.index, () => {
       KeeRenderer.renderScene(episode, arrayIdx, stage);
-
       KeeTrack('scene_transition', {
         scene_index: scene.index,
         scene_name:  scene.name || ''
@@ -108,9 +113,6 @@
     });
   }
 
-  /**
-   * Handle episode completion: show end screen, optional end hooks.
-   */
   function handleEpisodeEnd() {
     KeeHookEngine.checkEpisodeEndHooks(episode, () => {
       showCompletionScreen();
@@ -118,61 +120,59 @@
     });
   }
 
-  /**
-   * Update navigation button states and scene indicator.
-   */
   function updateNav(arrayIdx) {
-    const isFirst = arrayIdx === 0;
-    const isLast  = arrayIdx === totalScenes - 1;
-    const scene   = episode.scenes[arrayIdx];
-
-    btnPrev.disabled = isFirst;
+    const isLast = arrayIdx === totalScenes - 1;
+    btnPrev.disabled = arrayIdx === 0;
     btnNext.textContent = isLast ? 'Episode abschließen →' : 'Weiter →';
+  }
 
-    if (sceneIndicator) {
-      sceneIndicator.textContent =
-        `Szene ${arrayIdx + 1} von ${totalScenes}` +
-        (scene && scene.name ? ` · ${scene.name}` : '');
+  function updateProgress(arrayIdx) {
+    const pct = Math.round(((arrayIdx + 1) / totalScenes) * 100);
+    if (progressFill) progressFill.style.width = pct + '%';
+    if (progressLabel) {
+      const dur = episode.estimated_duration_minutes
+        ? ` · ca. ${Math.round(episode.estimated_duration_minutes)} Min.`
+        : '';
+      progressLabel.textContent =
+        `Episode 1 · Szene ${arrayIdx + 1} von ${totalScenes}${dur}`;
     }
   }
 
-  /**
-   * Show the episode-end completion card.
-   */
   function showCompletionScreen() {
     stage.innerHTML = '';
     stage.classList.remove('kee-stage--coda');
 
+    // Progress to 100%
+    if (progressFill) progressFill.style.width = '100%';
+    if (progressLabel) progressLabel.textContent = 'Episode 1 · Abgeschlossen';
+
     const card = document.createElement('div');
     card.className = 'kee-completion';
+    card.innerHTML = `
+      <div class="completion-icon">✓</div>
+      <h2 class="completion-title">Geschafft!</h2>
+      <p class="completion-intro">Du hast die erste Episode vollständig erlebt.</p>
+      <ul class="completion-list">
+        <li>✓ Eine komplette Geschichte auf Niederländisch verstanden</li>
+        <li>✓ Neue Wörter aus dem Zusammenhang erschlossen</li>
+        <li>✓ Mehrere Dialoge in Echtzeit verfolgt</li>
+        <li>✓ Das Telefonat – auch wenn es schnell war</li>
+        <li>✓ Dein Sprachgefühl trainiert</li>
+      </ul>
+      <p class="completion-next">Episode 2 erscheint bald.</p>
+    `;
 
-    const title = document.createElement('h2');
-    title.textContent = 'Episode abgeschlossen.';
-
-    const body = document.createElement('p');
-    body.textContent = 'Du hast Episode 01 vollständig erlebt.';
-
-    card.appendChild(title);
-    card.appendChild(body);
     stage.appendChild(card);
-
     btnNext.disabled = true;
     btnPrev.disabled = false;
-    if (sceneIndicator) sceneIndicator.textContent = 'Episode abgeschlossen';
   }
 
-  /**
-   * Show a human-readable error message and hide the navigation.
-   */
   function showError(message) {
     if (errorEl) {
-      // Replace \n with <br> for readable multi-line errors
       errorEl.innerHTML = message.replace(/\n/g, '<br>');
       errorEl.classList.remove('hidden');
     }
-    if (btnPrev) btnPrev.disabled = true;
-    if (btnNext) btnNext.disabled = true;
-    if (debugEl) debugEl.textContent = 'Fehler beim Laden';
+    if (btnStart) btnStart.disabled = true;
     console.error('[KeeApp]', message);
   }
 
