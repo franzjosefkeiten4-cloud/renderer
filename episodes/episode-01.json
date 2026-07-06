@@ -347,19 +347,19 @@
       "type": "PREDICTION",
       "trigger": "scene_start",
       "trigger_scene": 3,
-      "prompt_de": "Gleich klingelt Jans Handy. Wer ist das – was glaubst du?",
+      "prompt_de": "Manchmal hält man einen Moment inne, wenn man weiß, dass gleich etwas passieren wird. Keine richtigen Antworten – nur Gedanken, die man mit in die Geschichte nehmen kann.\n\nGleich klingelt Jans Handy. Was vermutest du: Wer ruft an?",
       "options": [
         {
           "key": "a",
-          "text": "Jans Frau Marta."
+          "text": "Vielleicht jemand aus dem Büro – irgendeine organisatorische Sache."
         },
         {
           "key": "b",
-          "text": "Ein Geschäftspartner."
+          "text": "Irgendwie glaube ich, es ist privat."
         },
         {
           "key": "c",
-          "text": "Jans Schwägerin."
+          "text": "Das zusje, von dem Jan gerade gesprochen hat."
         }
       ]
     },
@@ -371,15 +371,15 @@
       "options": [
         {
           "key": "a",
-          "text": "Rein organisatorisch."
+          "text": "Vielleicht war das einfach ein Terminproblem. Nichts Dramatisches."
         },
         {
           "key": "b",
-          "text": "Jans Schwägerin weiß von der Überraschung."
+          "text": "Das zusje weiß es. Darum der Anruf – und darum das Lächeln danach."
         },
         {
           "key": "c",
-          "text": "Privates - nichts mit dem Auftrag."
+          "text": "Das ist etwas anderes. Etwas, das Jan nichts anmerken lassen wollte."
         }
       ]
     },
@@ -387,7 +387,7 @@
       "id": "ep_01_hook_03_role_echo",
       "type": "ROLE_ECHO",
       "trigger": "episode_end",
-      "prompt_de": "Jan fragt: »Wilt u koffie?« – Was antwortest du?"
+      "prompt_de": "Jan schaut dich an.\n\n»Wilt u koffie?«\n\nWas sagst du?"
     }
   ],
   "spaced_hooks": [
