@@ -1,0 +1,103 @@
+# PRODUCTION OS — Episode 02 Update
+**Keiten Experience Engine · arc_markus_nijmegen**
+*Ergänzung zu production_os_ep01_v10.md*
+
+---
+
+## NEUE LOCATIONS
+
+| ID | Ort | Details | Szenen |
+|---|---|---|---|
+| LOC-08 | Schreinerei Weber, Kleve | Markus' Werkstatt. Deutschland. Holzgeruch, Werkzeuge an der Wand, Dachfenster, Werkbank. Gegenpol zu Nijmegen. | Ep02 A |
+| LOC-09 | Huis van Jan, Nijmegen | Wohnviertel. Backsteinhaus 1930er, Vorgartenstreifen, Buchsbaumrund. Nicht die Altstadt-Touristenzone. | Ep02 C–F |
+
+---
+
+## NEUE FIGUR (erste Szene)
+
+| ID | Name | Erste Szene | Bekannte Fakten |
+|---|---|---|---|
+| CHAR-05 | Marta van der Berg *(vorläufig)* | Ep02, Szene D | Verheiratet mit Jan. Liebt Bücher (sagt es selbst: »Ik houd van boeken«). Hat eine jüngere Schwester (het zusje). Weiß nicht von der Überraschung. |
+
+---
+
+## TIMELINE — NEUE EREIGNISSE
+
+| # | Ereignis | Szene | Block |
+|---|---|---|---|
+| T32 | Donnerstag. Zeichnungen kommen — einen Tag zu spät. Markus notiert Frage. | A | A.1 |
+| T33 | Markus schreibt E-Mail-Entwurf. Löscht ihn. Ruft stattdessen an. | A | A.1 |
+| T34 | Erstes Telefonat auf Niederländisch. Jan lädt Markus zum Haus ein. | B | B.1–14 |
+| T35 | Jan entschuldigt sich für die verspäteten Zeichnungen. | B | B.11 |
+| T36 | Samstag. Markus fährt nach Nijmegen — diesmal Wohnstraße, nicht Marktplatz. | C | C.1 |
+| T37 | Markus sieht das überfüllte Bücherregal im Flur (zu viele Bücher). | C | C.2 |
+| T38 | Markus nimmt Maße in Jans Wohnzimmer. | D | D.2–7 |
+| T39 | Marta kommt nach Hause. Jan stellt vor: »De schrijnwerker uit Kleve.« | D | D.8–13 |
+| T40 | Jan verlässt kurz den Raum (Telefon). | E | E.1 |
+| T41 | Marta sagt: »Endelijk.« Sie schaut auf die leere Wand. | E | E.3 |
+| T42 | Marta: »Ik houd van boeken.« — Sie weiß nicht, dass das Regal für sie ist. | E | E.8 |
+| T43 | Marta: »Mijn zusje.« — Markus hört das Wort. Sagt nichts. | E | E.11 |
+| T44 | Abschied im Vorgarten. Jan: »Haar verjaardag is over vier weken.« | F | F.6 |
+| T45 | Markus fährt N325 zurück. Denkt an »Ik houd van boeken.« | G | G.1–2 |
+
+---
+
+## OPEN THREADS — AKTUALISIERT
+
+| ID | Thread | Status |
+|---|---|---|
+| THREAD-04 | Zeichnungen von Jan | ✅ GESCHLOSSEN — Donnerstag eingetroffen (einen Tag zu spät) |
+| THREAD-05 | Überraschung / Marta weiß es nicht | OFFEN — Marta erschienen, weiß noch nichts |
+| THREAD-06 | Geschäftsbeziehung Markus–Jan | VERTIEFT — Auftrag konkret, Holz bestellt ab Montag |
+| THREAD-07 (NEU) | Verjaardag-Deadline | NEU — Martas Geburtstag in 4 Wochen. Treibt Ep03+ |
+| THREAD-01 | Jans verändertes Lächeln (Ep01) | OFFEN — kein neuer Hinweis in Ep02 |
+| THREAD-02 | Weiß das zusje von der Überraschung? | BERÜHRT — Marta erwähnt zusje beiläufig (Ep02 E.11) |
+| THREAD-03 | Inhalt des Telefonats (Ep01) | OFFEN |
+
+---
+
+## CHARACTER STATUS — AKTUALISIERT
+
+### CHAR-01 MARKUS WEBER
+- NL-Stand Ende Ep02: Telefonieren möglich. Maßvokabular aktiv. »Diep genoeg. Ik bestel het hout maandag.« (8 Wörter, aktiv, sicher)
+- Trägt jetzt ein Geheimnis, das mit einer konkreten Person verknüpft ist (Marta)
+
+### CHAR-02 JAN VAN DER BERG
+- Hat sich für die verspäteten Zeichnungen entschuldigt (»Dat spijt me«)
+- Verjaardag-Deadline nun Canon: Martas Geburtstag in 4 Wochen ab Ep02-Samstag
+
+### CHAR-05 MARTA VAN DER BERG *(erste Szene)*
+- Bekannte Fakten: liebt Bücher, hat jüngere Schwester (zusje), weiß nicht von Überraschung
+- Geburtstag: in 4 Wochen (Stand Ep02-Samstag)
+
+---
+
+## VOCABULARY — EP02 (23 neue Einträge)
+
+| NL | DE | Szene | Prio |
+|---|---|---|---|
+| goed nieuws | gute Neuigkeit | B | 3 |
+| zeg het maar | sagen Sie ruhig | B | 2 |
+| langskomen | vorbeikommen | B | 2 |
+| opmeten | ausmessen | B | 2 |
+| naar huis | nach Hause | B | 2 |
+| dat spijt me | das tut mir leid | B | 2 |
+| woonkamer | Wohnzimmer | C | 1 |
+| muur | Wand / Mauer | D | 1 |
+| breedte | Breite | D | 2 |
+| diep / diepte | tief / Tiefe | D | 2 |
+| schrijnwerker | Schreiner / Tischler | D | 3 |
+| aangenaam | angenehm (Begrüßung) | D | 1 |
+| nog maar net | gerade erst | D | 2 |
+| endelijk | endlich | E | 1 |
+| vloer | Boden / Fußboden | E | 2 |
+| plafond | Decke / Plafond | E | 2 |
+| ik houd van | ich liebe / mag | E | 1 |
+| altijd | immer | E | 2 |
+| verjaardag | Geburtstag | F | 1 |
+| over vier weken | in vier Wochen | F | 1 |
+| alles duidelijk | alles klar | F | 2 |
+| maandag | Montag | F | 2 |
+| bestellen / bestel | bestellen | F | 2 |
+
+**Kumulativ nach Ep02: 64 Vokabular-Targets gesamt (41 Ep01 + 23 Ep02)**
