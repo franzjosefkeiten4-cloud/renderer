@@ -1,1 +1,335 @@
 
+# PRODUCTION OS — arc_markus_nijmegen
+**Keiten Experience Engine · Staffel 1**
+*Version 2.0 · Konsolidiert aus Ep01 + Ep02*
+*Ersetzt: production_os_ep01_v10.md + production_os_ep02_update.md*
+
+---
+
+## 1. CHARACTER REGISTRY
+
+---
+
+### CHAR-01 · MARKUS WEBER
+
+| Feld | Wert | Quelle |
+|---|---|---|
+| ID | CHAR-01 | — |
+| Name | Markus Weber | CANON |
+| Alter | 42 | Staffel-1-Architektur + Episode-01-Design-Dokument |
+| Beruf | Schreinermeister | CANON |
+| Unternehmen | Eigene Schreinerei (Name unbekannt) | CANON (impliziert) |
+| Wohnort | Kleve, Deutschland | CANON |
+| Familienstand | Unbekannt | — |
+| Sprachen | Deutsch (Muttersprache) · Niederländisch (aktiv lernend, A1) | CANON |
+
+**NL-Kompetenzstand nach Ep02:**
+- Telefonieren möglich (einfache Sachfragen)
+- Maßvokabular aktiv
+- Letzter Output Ep02: „Diep genoeg. Ik bestel het hout maandag."
+- Denkt am Ende von Ep01 auf Niederländisch (unbewusst)
+
+**Beziehungen:**
+- → CHAR-02 Jan van der Berg: Neuer Geschäftspartner, Ep01–02. Vertrauensbasis etabliert.
+- → CHAR-05 Marta van der Berg: Erste Begegnung Ep02. Trägt ihr Geheimnis, ohne es zu benennen.
+
+---
+
+### CHAR-02 · JAN VAN DER BERG
+
+| Feld | Wert | Quelle |
+|---|---|---|
+| ID | CHAR-02 | — |
+| Name | Jan van der Berg | CANON |
+| Alter | ca. 48 | Character Development |
+| Beruf | Architekt (interieur) | Episode-01-Design-Dok: »niederländischer Architekt«; Büro mit tekeningen, professioneller Kontext |
+| Wohnort | Nijmegen, Niederlande | CANON |
+| Büro | Nijmegen, Nähe Marktplatz | CANON |
+| Wohnhaus | Nijmegen, Wohnviertel (LOC-09) | CANON (Ep02) |
+| Familienstand | Verheiratet mit CHAR-05 | CANON |
+
+**Bekannte Fakten:**
+- Projekt: houten trap + boekenplank op maat, Thoma Holz/Holz100
+- Boekenplank ist Überraschung für CHAR-05
+- Lieferdatum Zeichnungen: versprochen Mittwoch, eingetroffen Donnerstag
+- Entschuldigt sich für die Verspätung (»Dat spijt me«)
+- CHAR-05's Geburtstag ist 4 Wochen nach Ep02-Samstag
+- Hat nach dem zusje-Telefonat (Ep01) anders gelächelt
+
+---
+
+### CHAR-03 · JANS FRAU (CHAR-05, vorläufig Marta)
+
+*Hinweis: CHAR-03 und CHAR-05 bezeichnen dieselbe Person. In der Story Bible wird ab sofort nur noch CHAR-05 verwendet. CHAR-03 war der Platzhalter vor der ersten Szene.*
+
+→ Weiterführung unter CHAR-05.
+
+---
+
+### CHAR-04 · HET ZUSJE
+
+| Feld | Wert | Quelle |
+|---|---|---|
+| ID | CHAR-04 | — |
+| Name | Unbekannt | — |
+| Bezug | Schwester von CHAR-05 (Jans Frau) | CANON |
+| Erste Erwähnung | Ep01, Szene D: »dat is haar zusje« | CANON |
+| Aktion | Hat Jan während des Meetings angerufen (Ep01) | CANON |
+| Aktion | CHAR-05 erwähnt sie beiläufig in Ep02 (»mijn zusje«) | CANON |
+
+---
+
+### CHAR-05 · MARTA VAN DER BERG *(Name vorläufig)*
+
+| Feld | Wert | Quelle |
+|---|---|---|
+| ID | CHAR-05 | — |
+| Name | Marta *(unbestätigt — vorläufig)* | Beat Sheet (unbestätigt) |
+| Alter | ca. Mitte fünfzig | Ep02-Drehbuch |
+| Wohnort | Nijmegen, gemeinsam mit Jan (LOC-09) | CANON |
+| Familienstand | Verheiratet mit CHAR-02 | CANON |
+| Geschwister | Jüngere Schwester (CHAR-04, het zusje) | CANON |
+| Erste Szene | Ep02, Szene D | CANON |
+| Geburtstag | 4 Wochen nach Ep02-Samstag | CANON |
+
+**Bekannte Fakten aus Ep02:**
+- »Endelijk« (als sie auf die leere Wand schaut)
+- »Ik houd van boeken. Veel te veel, zegt Jan altijd.«
+- Weiß nicht von der boekenplank-Überraschung
+- Erwähnt die zusje beiläufig (»mijn zusje. Altijd op het verkeerde moment.«)
+
+---
+
+## 2. LOCATION REGISTRY
+
+| ID | Ort | Details | Erstmals |
+|---|---|---|---|
+| LOC-01 | Nijmegen, Niederlande | Übergeordneter Handlungsort. Oktober. | Ep01 A |
+| LOC-02 | Gasse hinter dem Marktplatz | Markus parkt hier (Ep01). Fahrräder. | Ep01 A |
+| LOC-03 | Büro Jan van der Berg | Dritter Stock, Nähe Marktplatz. Tisch, Kaffee, Zeichnungen, Handy. | Ep01 B |
+| LOC-04 | Marktplatz Nijmegen | Markus steht hier nach Ep01-Ende. | Ep01 E |
+| LOC-05 | N325 (Richtung Kleve) | Rückfahrtstrecke Markus → Kleve. | Ep01 Abschluss |
+| LOC-06 | Kleve, Deutschland | Markus' Heimatstadt. | Ep01 (erwähnt) |
+| LOC-07 | Duitsland | Von Markus in Dialog verwendet. | Ep01 C |
+| LOC-08 | Schreinerei Weber, Kleve | Markus' Werkstatt. Dachfenster, Werkzeuge, Werkbank. Ep02-Opener. | Ep02 A |
+| LOC-09 | Huis van Jan, Nijmegen | Wohnstraße, Backsteinhaus 1930er. Büchergefüllter Flur. Wohnzimmer mit leerer Wand. | Ep02 C–F |
+
+---
+
+## 3. TIMELINE
+
+*Vollständige chronologische Ereignisfolge beider Episoden.*
+
+### Episode 01 — Oktober
+
+| # | Ereignis | Szene | Block |
+|---|---|---|---|
+| T01 | Oktober. Markus parkt in Gasse hinter Marktplatz. Zehn Minuten zu früh. | A | A.1 |
+| T02 | Lässt das Radio laufen. Fahrräder draußen. | A | A.1 |
+| T03 | Nimmt seine Mappe, atmet einmal durch, geht. | A | A.1 |
+| T04 | Jan öffnet die Tür: »Goedemorgen! Kom binnen, kom binnen!« | B | B.1 |
+| T05 | Jan bietet Kaffee oder Tee an. | B | B.2 |
+| T06 | Markus' erstes NL-Wort: »Koffie, graag.« | B | B.3 |
+| T07 | Jan bringt Kaffee. Setzt sich gegenüber. | C | C.1 |
+| T08 | Jan öffnet Mappe, legt Zeichnungen auf den Tisch. Projekt: houten trap + boekenplank op maat. | C | C.3 |
+| T09 | Markus erkennt Thoma Holz in den Zeichnungen. | C | C.4 |
+| T10 | Jan überrascht und erfreut: »Precies! Kent u dat?« | C | C.5 |
+| T11 | Markus: »Ja. Wij werken daar ook mee. In Duitsland.« | C | C.6 |
+| T12 | Jan: »Dan wordt dit een mooie samenwerking, denk ik.« | C | C.7 |
+| T13 | Jan, leiser: Boekenplank ist Überraschung für seine Frau. »Zij weet het niet.« | C | C.8 |
+| T14 | Markus bedankt sich falsch: »Dankjewel.« (informell) | C | C.9 |
+| T15 | Jan korrigiert sanft: »Dankúwel.« | C | C.10 |
+| T16 | Jan kündigt an: Zeichnungen kommen am Mittwoch (woensdag). | C | C.12 |
+| T17 | Markus: »Ja. Prima.« | C | C.13 |
+| T18 | Jans Handy vibriert. Er schaut auf das Display. Gesichtsausdruck verändert sich — kaum. | D | D.1 |
+| T19 | Jan: »Één moment. Dat is… dat is haar zusje.« | D | D.2 |
+| T20 | Jan telefoniert schnell, leiser. Markus versteht Fragmente: boekenplank, woensdag, »zij weet het nog niet.« | D | D.4 |
+| T21 | Jan legt auf. Lächelt. Anders als vorher. | D | D.1+E.4 |
+| T22 | Jan: »Sorry. Waar waren we?« | D | D.6 |
+| T23 | Markus: »De boekenplank?« — produktiver Output nach Telefonat. | D | D.7 |
+| T24 | Jan: »Woensdag krijgt u de tekeningen.« | D | D.8 |
+| T25 | Markus steht auf dem Marktplatz. Oktober. Herbstsonne. Fahrradklingel. | E | E.1 |
+| T26 | Markus erinnert sich: »Goedemorgen. Koffie, graag. De boekenplank. Woensdag. Zij weet het nog niet.« | E | E.2 |
+| T27 | Markus: Drei Mal Niederländisch gesprochen. Mehr als erwartet. | E | E.3 |
+| T28 | Markus denkt an Jans verändertes Lächeln. An das zusje. | E | E.4 |
+| T29 | Markus steigt ins Auto. Denkt auf Niederländisch: »Zij weet het nog niet.« | E | E.5 |
+| T30 | Markus fährt die N325 zurück nach Kleve. | Abschluss | — |
+
+### Episode 02 — Donnerstag + Samstag (folgende Woche)
+
+| # | Ereignis | Szene | Block |
+|---|---|---|---|
+| T31 | Donnerstag. Zeichnungen kommen — einen Tag nach dem Versprechen (Mittwoch). | A | A.1 |
+| T32 | Markus schreibt E-Mail-Entwurf. Löscht ihn. Ruft stattdessen an. | A | A.1 |
+| T33 | Erstes Telefonat Markus→Jan auf Niederländisch. Frage zur Nischentiefe. | B | B.1–13 |
+| T34 | Jan lädt Markus zum Haus ein: »Wil je even langskomen?« | B | B.8 |
+| T35 | Jan entschuldigt sich für die verspäteten Zeichnungen: »Dat spijt me.« | B | B.11 |
+| T36 | Markus schreibt: »zat. opmeten« in seine Zeichnungen. | B | B.14 |
+| T37 | Samstag. Markus fährt zur Wohnstraße (LOC-09). Kein Radio diesmal. Genau pünktlich. | C | C.1 |
+| T38 | Jan öffnet: »Markus. Kom binnen.« — nur einmal. | C | C.2 |
+| T39 | Markus sieht das überfüllte Bücherregal im Flur. Sagt nichts. | C | C.3 |
+| T40 | Markus nimmt Maße in der Woonkamer. Jan hält das Band. | D | D.2–6 |
+| T41 | Marta kommt nach Hause. Jan stellt vor: »De schrijnwerker uit Kleve.« | D | D.8–9 |
+| T42 | Marta: »Aangenaam.« Markus: »Aangenaam.« | D | D.10–11 |
+| T43 | Jan verlässt kurz den Raum (Telefon). | E | E.1 |
+| T44 | Marta sieht die leere Wand: »Endelijk.« | E | E.3 |
+| T45 | Marta fragt Markus: »Wordt het groot?« — er beschreibt: von Vloer bis Plafond. | E | E.4–7 |
+| T46 | Marta: »Ik houd van boeken. Veel te veel, zegt Jan altijd.« | E | E.8–9 |
+| T47 | Martas Telefon vibriert: »Mijn zusje. Altijd op het verkeerde moment.« | E | E.11 |
+| T48 | Markus hört das Wort. Sagt nichts. Trinkt seinen Kaffee. | E | E.12–13 |
+| T49 | Abschied im Vorgarten. Jan: »Haar verjaardag is over vier weken.« | F | F.6 |
+| T50 | Markus: »Diep genoeg. Ik bestel het hout maandag.« | F | F.4 |
+| T51 | Markus fährt N325 zurück. Denkt an »Ik houd van boeken.« | G | G.1–2 |
+
+---
+
+## 4. CANON
+
+*Nur verifizierbare Fakten. Keine Interpretationen.*
+
+### Markus Weber
+- Schreiner, 42, Kleve
+- Eigene Schreinerei (Name unbekannt)
+- Arbeitet mit Thoma Holz / Holz100
+- Spricht kein Niederländisch am Anfang von Ep01
+- Hat in Ep01 fünf NL-Sätze gesprochen; in Ep02 sieben (inkl. Telefon)
+- Bestellt das Holz am Montag nach dem Ep02-Samstag
+
+### Jan van der Berg
+- Architekt, Nijmegen
+- Verheiratet mit CHAR-05 (Name unbestätigt: Marta)
+- Projekt: houten trap + boekenplank op maat, Thoma Holz
+- Boekenplank ist Überraschung für seine Frau
+- Zeichnungen versprochen Mittwoch, geliefert Donnerstag
+- Hat Markus für die Verspätung gedankt (»Dat spijt me«)
+- Frau's Geburtstag: 4 Wochen nach Ep02-Samstag
+
+### CHAR-05 (Marta)
+- Jans Frau; Geburtstag in 4 Wochen
+- Liebt Bücher (»Ik houd van boeken«)
+- Hat eine jüngere Schwester (CHAR-04, het zusje)
+- Weiß nichts von der boekenplank-Überraschung (Stand Ep02)
+
+### Telefonat Ep01-D4 (nicht vollständig verstanden)
+- Markus verstand: »woensdag is het klaar«, »de boekenplank«, »zij weet het nog niet«
+- Vollständiger Inhalt des Telefonats: **unbekannt**
+
+---
+
+## 5. OPEN THREADS
+
+| ID | Thread | Status | Letzte Referenz |
+|---|---|---|---|
+| THREAD-01 | Warum hatte Jan nach dem Telefonat anders gelächelt? | OFFEN | Ep01 E.4 |
+| THREAD-02 | Weiß das zusje von der Überraschung? | BERÜHRT (Marta erwähnt zusje beiläufig Ep02) | Ep02 E.11 |
+| THREAD-03 | Was hat Jan dem zusje vollständig gesagt? | OFFEN | Ep01 D.4 |
+| THREAD-04 | Zeichnungen von Jan | ✅ GESCHLOSSEN — Donnerstag eingetroffen (einen Tag zu spät) | Ep02 B.11 |
+| THREAD-05 | Wird die Überraschung für CHAR-05 entdeckt? | OFFEN | Ep02 E passim |
+| THREAD-06 | Geschäftsbeziehung Markus–Jan | VERTIEFT — Holz bestellt ab Montag | Ep02 F |
+| THREAD-07 | Verjaardag-Deadline | AKTIV — 4 Wochen ab Ep02-Samstag | Ep02 F.6 |
+
+---
+
+## 6. VOCABULARY REGISTRY
+
+*Kumulativ nach Ep02: **64 Targets gesamt** (41 Ep01 + 23 Ep02)*
+
+### Episode 01 — 41 Targets
+
+**Scene B (10):** goedemorgen, u / uw, toch, kom binnen, wilt u, koffie, graag, of, liever, thee
+
+**Scene C (21):** bespreken, hout / houten, trap, boekenplank, op maat, tekeningen, wordt, samenwerking, precies, mooie, nog één ding, verrassing, vrouw, niet, weet, dankjewel, dankuwel, stuur / sturen, woensdag, prima, Duitsland
+
+**Scene D (10):** één moment, haar, zusje, dat klopt niet, luister, klaar, zij, sorry, waar waren we, krijgt
+
+### Episode 02 — 23 neue Targets
+
+**Scene B (6):** goed nieuws, zeg het maar, langskomen, opmeten, naar huis, dat spijt me
+
+**Scene C (1):** woonkamer
+
+**Scene D (7):** muur, breedte, diep / diepte, schrijnwerker, aangenaam, nog maar net, [bloc D hält auch vloer/plafond vor]
+
+**Scene E (5):** endelijk, vloer, plafond, ik houd van, altijd
+
+**Scene F (4):** verjaardag, over X weken, alles duidelijk, maandag / bestellen
+
+---
+
+## 7. OBJECT REGISTRY
+
+| ID | Objekt | Kontext | Szenen |
+|---|---|---|---|
+| OBJ-01 | Auto (Markus) | Ep01 A, E; Ep02 C, G | Ep01–02 |
+| OBJ-02 | Radio (im Auto) | Läuft in Ep01 (Zögern). Nicht in Ep02. | Ep01 A |
+| OBJ-03 | Mappe (Markus) | Mitgenommen Ep01. | Ep01 A |
+| OBJ-04 | Kaffeebecher | Ep01: von Jan gebracht. Ep02: von Marta gebracht. | Ep01 B–C, Ep02 D–E |
+| OBJ-05 | Zeichnungen / Tekeningen | Gezeigt Ep01 C. Geliefert Ep02 A (einen Tag zu spät). | Ep01 C, Ep02 A |
+| OBJ-06 | Handy Jan | Vibriert Ep01 D. Jan verlässt Raum Ep02 E. | Ep01 D, Ep02 E |
+| OBJ-07 | Boekenplank (Projekt) | Auftragsgegenstand + Überraschung. | Ep01–02 passim |
+| OBJ-08 | Houten trap (Projekt) | Auftragsgegenstand. | Ep01 C |
+| OBJ-09 | Autoschlüssel | Markus hält ihn nach Ep01. | Ep01 E |
+| OBJ-10 | Maßband (Markus) | Mitgenommen zu Ep02. | Ep02 C–D |
+| OBJ-11 | Notizheft (Markus) | Notiert Maße. »zat. opmeten«. | Ep02 B, D |
+| OBJ-12 | Bücherregal im Flur (Jan's Haus) | Überfüllt. Markus sieht es zweimal. | Ep02 C, F |
+| OBJ-13 | Nl-DE-Wörterbuch | Abgegriffen, ganz unten im Flurregal. | Ep02 F |
+
+---
+
+## 8. EMOTION REGISTRY
+
+| Episode | Szene | Dominante Emotion | Beleg |
+|---|---|---|---|
+| Ep01 | A | Nervosität | »lässt das Radio laufen«, »atmet einmal durch« |
+| Ep01 | B | Erleichterung + Überraschung | »Das überraschte ihn« |
+| Ep01 | C | Wachsendes Vertrauen → Verbundenheit | Thoma-Holz-Moment; dankuwel-Korrektur |
+| Ep01 | D | Verwirrung + Aufmerksamkeit | »zu schnell, zu viel« — aber Fragmente erkannt |
+| Ep01 | E | Leise Neugier + Erleichterung | »Das zählte« |
+| Ep02 | A | Konzentration + Entscheidung | E-Mail gelöscht, Anruf gewählt |
+| Ep02 | B | Anspannung → Erleichterung | Telefon funktioniert; unerwartete Einladung |
+| Ep02 | C–D | Professionelle Sicherheit | Markus misst, notiert, arbeitet |
+| Ep02 | E | Gewicht des Wissens | »Er weiß es. Er hält es.« |
+| Ep02 | F | Stille Verbundenheit | »Het wordt goed.« — Jan nickt |
+| Ep02 | G | Leise Nachdenklichkeit | »Man baut Dinge für Menschen, die man kaum kennt.« |
+
+---
+
+## 9. RELATIONSHIP REGISTRY
+
+### REL-01 · Markus ↔ Jan
+- Ep01: Erste Begegnung. Geschäftlich, dann warm. Samenwerking vereinbart.
+- Ep02: Telefonkontakt. Markus besucht Jans Haus. Erstes gemeinsames Tun.
+- Status: Professionell etabliert, persönlich wachsend.
+
+### REL-02 · Jan ↔ CHAR-05 (Marta)
+- Ep01: Nur erwähnt. Jan plant Überraschung.
+- Ep02: Marta erscheint. Geheimnis intakt.
+
+### REL-03 · Jan ↔ CHAR-04 (das zusje)
+- Ep01: Telefonat. Jans Lächeln verändert.
+- Ep02: CHAR-05 erwähnt zusje beiläufig.
+- Status: Unklar. Quelle von THREAD-01 + THREAD-02.
+
+### REL-04 · Markus ↔ CHAR-05 (Marta)
+- Ep02: Erste Begegnung. Markus trägt ihr Geheimnis.
+- Status: Neu. Asymmetrisches Wissen.
+
+---
+
+## 10. EPISODE SUMMARY
+
+### Episode 01 — »Goedemorgen, meneer Weber«
+Oktober. Nijmegen. Erstes Treffen. Ein Schreiner aus Deutschland und ein Architekt aus den Niederlanden finden eine gemeinsame Sprache — durch ein Material, nicht durch Worte. Das Telefonat hinterlässt eine Frage. Fünf NL-Sätze. Ein unvergessliches Wort.
+
+*Lernthema: Ich verstehe mehr, als ich dachte.*
+
+### Episode 02 — »Op Maat«
+Donnerstag + Samstag. Kleve und Nijmegen. Die Zeichnungen kommen einen Tag zu spät. Markus ruft an — auf Niederländisch, zum ersten Mal. Am Samstag betritt er Jans Haus. Er misst. Dann trifft er die Frau, für die er das Regal baut. Sie sagt: »Ik houd van boeken.« Er weiß es bereits. Vier Wochen bis zu ihrem Geburtstag.
+
+*Lernthema: Was mache ich mit dem, was ich weiß?*
+
+---
+
+*Production OS v2.0 · arc_markus_nijmegen*
+*Konsolidiert aus: production_os_ep01_v10.md + production_os_ep02_update.md*
+*Gültig ab: Ep03-Entwicklung*
