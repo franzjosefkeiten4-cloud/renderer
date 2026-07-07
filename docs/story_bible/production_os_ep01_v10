@@ -1,0 +1,405 @@
+# PRODUCTION OS — Episode 01
+**Keiten Experience Engine · arc_markus_nijmegen**
+*Version 1.0 · Extrahiert aus episode-01.json · Nur verifizierbare Fakten*
+
+---
+
+## 1. CHARACTER REGISTRY
+
+---
+
+### CHAR-01 · MARKUS WEBER
+| Feld | Wert |
+|---|---|
+| ID | CHAR-01 |
+| Name | Markus Weber |
+| Rolle | Protagonist |
+| Beruf | Schreiner |
+| Herkunft | Kleve, Deutschland |
+| Sprache NL | Beginner. Versteht mehr als erwartet. |
+| Erste Szene | Szene A (Erzähler) · Szene B (erste Handlung) |
+| Letzter Satz | „De boekenplank?" (S3) / innerer Gedanke: »Zij weet het nog niet.« (S5) |
+| Status Ende Ep01 | Verlässt Nijmegen. Fährt zurück nach Kleve (N325). |
+
+**NL-Sätze in Ep01 (gesprochen):**
+1. „Koffie, graag." (S1)
+2. „Ja. Wij werken daar ook mee. In Duitsland." (S2 — nach Thoma-Holz-Moment)
+3. „Dankjewel, meneer Van der Berg." (S2 — falsche Register-Wahl)
+4. „Ja. Prima." (S2)
+5. „De boekenplank?" (S3 — erster produktiver Output nach Telefonat)
+
+**Beziehungen:**
+- → CHAR-02 Jan van der Berg: Neuer Geschäftskunde, erstes Treffen.
+
+---
+
+### CHAR-02 · JAN VAN DER BERG
+| Feld | Wert |
+|---|---|
+| ID | CHAR-02 |
+| Name | Jan van der Berg |
+| Rolle | Kunde, zweite Hauptfigur |
+| Beruf | Nicht explizit genannt |
+| Aufenthaltsort | Nijmegen, Niederlande |
+| Erste Szene | Szene B |
+| Status Ende Ep01 | Im Büro. Telefonat empfangen. Lächeln verändert. |
+
+**Bekannte Fakten:**
+- Hat eine Frau (name unbekannt)
+- Frau hat eine jüngere Schwester: het zusje (name unbekannt)
+- Beauftragt: houten trap + boekenplank op maat (Thoma Holz / Holz100)
+- Boekenplank ist eine Überraschung für seine Frau
+- Schickt Markus am Mittwoch (woensdag) die Zeichnungen
+- Hat Markus den falschen Dank (dankjewel) sanft korrigiert (dankuwel)
+
+**Beziehungen:**
+- → CHAR-01 Markus Weber: Neuer Geschäftspartner. Reaktion auf Thoma-Holz-Erkennung: „Precies! Kent u dat?" — Wärme, Überraschung.
+- → CHAR-03 Jans Frau: Verheiratet. Plant Überraschung für sie.
+- → CHAR-04 Het Zusje: Anruf in Szene D. Veränderte Stimmung danach.
+
+---
+
+### CHAR-03 · JANS FRAU *(keine direkte Szene)*
+| Feld | Wert |
+|---|---|
+| ID | CHAR-03 |
+| Name | Nicht genannt |
+| Rolle | Erwähnt, nicht erschienen |
+| Erste Erwähnung | Szene C, Block C.8 |
+| Bezug | Empfängerin der boekenplank (Überraschung) |
+| Bekannt von | „Het is een verrassing voor mijn vrouw. Zij weet het niet." |
+| Status | Weiß nichts von der Überraschung — Stand Ep01. |
+
+---
+
+### CHAR-04 · HET ZUSJE *(keine direkte Szene, nur Stimme)*
+| Feld | Wert |
+|---|---|
+| ID | CHAR-04 |
+| Name | Nicht genannt |
+| Rolle | Erwähnt, Stimme in Szene D |
+| Bezug | „Haar zusje" — Schwester von CHAR-03 |
+| Erste Erwähnung | Szene D, Block D.2 (Jan: „dat is haar zusje") |
+| Aktion | Hat Jan während des Meetings angerufen |
+| Status | Unbekannt. Jans Lächeln danach: verändert. → THREAD-01 |
+
+---
+
+## 2. LOCATION REGISTRY
+
+| ID | Ort | Details | Szenen |
+|---|---|---|---|
+| LOC-01 | Nijmegen, Niederlande | Handlungsort der gesamten Episode. Herbst (Oktober). | A–E |
+| LOC-02 | Kleine Gasse hinter dem Marktplatz | Markus parkt hier. Fahrräder draußen. | A |
+| LOC-03 | Büro / Besprechungsraum Jan van der Berg | Exakte Adresse nicht genannt. In Nijmegen, Nähe Marktplatz. Tisch. Kaffee. Zeichnungen. Handy. | B–D |
+| LOC-04 | Marktplatz Nijmegen | Markus steht hier nach dem Treffen. Herbstsonne auf dem Pflaster. Fahrradklingel. | E |
+| LOC-05 | N325 (Richtung Kleve) | Erwähnt in Abschluss-Screen. Markus fährt zurück. | Abschluss |
+| LOC-06 | Kleve, Deutschland | Herkunftsort von Markus. Nicht besucht. | erwähnt (S2, S6) |
+| LOC-07 | Duitsland | Von Markus erwähnt: „Wij werken daar ook mee. In Duitsland." | S2 |
+
+---
+
+## 3. TIMELINE
+
+*Chronologische Rekonstruktion. Nur was die Episode zeigt.*
+
+| # | Ereignis | Szene | Block |
+|---|---|---|---|
+| T01 | Oktober. Markus parkt in einer Gasse hinter dem Marktplatz. Zehn Minuten zu früh. | A | A.1 |
+| T02 | Er lässt das Radio laufen. Fahrräder draußen. | A | A.1 |
+| T03 | Er nimmt seine Mappe, atmet einmal durch, geht. | A | A.1 |
+| T04 | Jan öffnet die Tür, lächelnd: „Goedemorgen!" | B | B.1 |
+| T05 | Jan bietet Kaffee oder Tee an. | B | B.2 |
+| T06 | Markus' erstes NL-Wort: „Koffie, graag." | B | B.3 |
+| T07 | Jan bringt Kaffee. Setzt sich gegenüber. | C | C.1 |
+| T08 | Jan öffnet Mappe, legt Zeichnungen auf den Tisch. Projekt: houten trap + boekenplank op maat. | C | C.3 |
+| T09 | Markus erkennt Thoma Holz in den Zeichnungen. | C | C.4 |
+| T10 | Jan überrascht und erfreut: „Precies! Kent u dat?" | C | C.5 |
+| T11 | Markus: „Ja. Wij werken daar ook mee. In Duitsland." | C | C.6 |
+| T12 | Jan: „Dan wordt dit een mooie samenwerking, denk ik." — Wärme. | C | C.7 |
+| T13 | Jan, leiser: Boekenplank ist Überraschung für seine Frau. Sie weiß es nicht. | C | C.8 |
+| T14 | Markus bedankt sich falsch: „Dankjewel." (informell) | C | C.9 |
+| T15 | Jan korrigiert sanft: „Dankúwel." | C | C.10 |
+| T16 | Jan kündigt Liefertermin an: Woensdag, die Zeichnungen. | C | C.12 |
+| T17 | Markus: „Ja. Prima." | C | C.13 |
+| T18 | Jans Handy vibriert auf dem Tisch. | D | D.1 |
+| T19 | Jan sieht auf das Display. Gesichtsausdruck verändert sich — kaum. | D | D.1 |
+| T20 | Jan nimmt an: „Één moment. Dat is… dat is haar zusje." | D | D.2 |
+| T21 | Jan telefoniert — schnell, leiser. Markus versteht fast nichts. Fragmente: boekenplank, woensdag, „zij weet het nog niet." | D | D.4 |
+| T22 | Jan legt auf. Lächelt. Aber anders als vorher. | D | D.1+E.4 |
+| T23 | Jan: „Sorry. Waar waren we?" | D | D.6 |
+| T24 | Markus: „De boekenplank?" — Erster produktiver Output nach Telefonat. | D | D.7 |
+| T25 | Jan bestätigt: „Woensdag krijgt u de tekeningen." | D | D.8 |
+| T26 | Markus steht auf dem Marktplatz. Oktober. Herbstsonne. Fahrradklingel. Irgendwo ruft ein Kind. | E | E.1 |
+| T27 | Markus erinnert sich: „Goedemorgen. Koffie, graag. De boekenplank. Woensdag. Zij weet het nog niet." | E | E.2 |
+| T28 | Markus: Drei Mal Niederländisch gesprochen. Mehr als erwartet. | E | E.3 |
+| T29 | Markus denkt an Jan's verändertes Lächeln. An das zusje. | E | E.4 |
+| T30 | Markus steigt ins Auto. Denkt — auf Niederländisch: »Zij weet het nog niet.« | E | E.5 |
+| T31 | Markus fährt die N325 zurück nach Kleve. | Abschluss | — |
+
+**Tageszeit:** Morgen (goedemorgen).
+**Jahreszeit:** Oktober.
+
+---
+
+## 4. CANON
+
+*Ausschließlich verifizierbare Fakten. Keine Vermutungen. Keine Interpretationen.*
+
+### Über Markus Weber
+- Schreiner, aus Kleve (Deutschland)
+- Spricht zu Beginn der Episode kein Niederländisch
+- Sein Unternehmen arbeitet mit Thoma Holz / Holz100 (eigene Aussage Szene C)
+- Hat im Lauf von Ep01 fünf NL-Sätze gesprochen (T06, T11, T13-falsch, T17, T24)
+- Hat am Ende der Episode auf Niederländisch gedacht (T30)
+
+### Über Jan van der Berg
+- Voller Name: Jan van der Berg (S2, C.9: „meneer Van der Berg")
+- Hat eine Ehefrau (nicht namentlich genannt)
+- Hat eine Schwägerin: „haar zusje" (S3, D.2)
+- Beauftragt: houten trap + boekenplank op maat aus Thoma Holz / Holz100
+- Die boekenplank ist eine Überraschung für seine Frau
+- Lieferdatum: Mittwoch (woensdag)
+- Schickt Markus am Mittwoch die Zeichnungen
+- Hat Markus' falsches Dankjewel sanft mit Dankuwel korrigiert
+- Hat nach dem Telefonat mit dem zusje anders gelächelt — bestätigt in E.4 (Erzähler)
+
+### Über das Projekt
+- Auftragsgegenstand 1: houten trap (hölzerne Treppe)
+- Auftragsgegenstand 2: boekenplank op maat (maßgefertigtes Bücherregal)
+- Material: Thoma Holz / Holz100
+- Status Ende Ep01: Zeichnungen noch ausstehend (kommen am Mittwoch)
+- Zweck boekenplank: Überraschung für Jans Frau
+
+### Über das Telefonat (D.4)
+- Anruferin: Jans Schwägerin (haar zusje)
+- Jans Fragmente am Telefon (Markus versteht): „woensdag is het klaar", „de boekenplank", „zij weet het nog niet", „ik bel je straks terug"
+- Was genau das zusje weiß oder nicht weiß: **nicht bestätigt durch den Text** (→ THREAD-01)
+
+---
+
+## 5. OPEN THREADS
+
+| ID | Thread | Referenz | Status |
+|---|---|---|---|
+| THREAD-01 | Warum hatte Jan nach dem Telefonat anders gelächelt? | S3 D.4, S5 E.4 | Offen. Interpretationen möglich, nichts bestätigt. |
+| THREAD-02 | Weiß das zusje von der Überraschung für Jans Frau? | S2 C.8, S3 D.4 | Im Telefonat: „zij weet het nog niet" — aber über wen? Offen. |
+| THREAD-03 | Was hat Jan dem zusje vollständig gesagt? | S3 D.4 | Markus versteht nur Fragmente. Vollständiger Inhalt unbekannt. |
+| THREAD-04 | Erhält Markus die Zeichnungen am Mittwoch? | S2 C.12, S3 D.8 | Versprochen. Nicht bestätigt. |
+| THREAD-05 | Wird die Überraschung für Jans Frau aufgedeckt? | S2 C.8 | Keine Hinweise. Offen. |
+| THREAD-06 | Wie entwickelt sich die Geschäftsbeziehung Markus–Jan? | S2 C.7 (samenwerking) | Erste Begegnung positiv abgeschlossen. Kein Folge-Termin genannt. |
+
+---
+
+## 6. VOCABULARY REGISTRY
+
+*Alle 41 in Ep01 eingeführten NL-Wörter. Quelle: vocabulary_targets in episode-01.json.*
+
+---
+
+### Begrüßung & erster Kontakt
+| NL | Deutsch | Szene |
+|---|---|---|
+| goedemorgen | Guten Morgen | B |
+| u / uw | Sie / Ihr (formell) | B |
+| toch | doch / oder? (Bestätigungspartikel) | B |
+| kom binnen | komm herein / kommen Sie rein | B |
+
+---
+
+### Angebot & Höflichkeit
+| NL | Deutsch | Szene |
+|---|---|---|
+| wilt u | möchten Sie | B |
+| koffie | Kaffee | B |
+| graag | gerne / bitte | B |
+| of | oder | B |
+| liever | lieber | B |
+| thee | Tee | B |
+| prima | prima | C |
+| precies | genau | C |
+| sorry | Entschuldigung | D |
+
+---
+
+### Dankbarkeit & Register
+| NL | Deutsch | Szene |
+|---|---|---|
+| dankjewel | danke (informell, du-Form) | C |
+| dankuwel | danke (formell, Sie-Form) | C |
+
+---
+
+### Projekt & Handwerk
+| NL | Deutsch | Szene |
+|---|---|---|
+| hout / houten | Holz / hölzern | C |
+| trap | Treppe | C |
+| boekenplank | Bücherregal | C |
+| op maat | nach Maß / maßgefertigt | C |
+| tekeningen | Zeichnungen | C |
+| samenwerking | Zusammenarbeit | C |
+
+---
+
+### Zeit & Planung
+| NL | Deutsch | Szene |
+|---|---|---|
+| vandaag | heute | C |
+| woensdag | Mittwoch | C |
+| één moment | einen Moment | D |
+| klaar | fertig / bereit | D |
+| krijgt | bekommt | D |
+| stuur / sturen | schicke / schicken | C |
+
+---
+
+### Kommunikation & Ausdruck
+| NL | Deutsch | Szene |
+|---|---|---|
+| bespreken | besprechen | C |
+| nog één ding | noch eine Sache | C |
+| dat klopt niet | das stimmt nicht | D |
+| luister | hör zu | D |
+| waar waren we | wo waren wir | D |
+
+---
+
+### Pronomen & Grammatik
+| NL | Deutsch | Szene |
+|---|---|---|
+| niet | nicht | C |
+| weet | weiß | C |
+| wordt | wird | C |
+| haar | ihr / ihre (possessiv, 3. Pers. fem.) | D |
+| zij | sie (3. Pers. fem.) | D |
+
+---
+
+### Personen & Familie
+| NL | Deutsch | Szene |
+|---|---|---|
+| vrouw | Frau / Ehefrau | C |
+| verrassing | Überraschung | C |
+| zusje | jüngere Schwester / Schwesterchen | D |
+
+---
+
+### Ort & Kontext
+| NL | Deutsch | Szene |
+|---|---|---|
+| Duitsland | Deutschland | C |
+| mooie | schön / hübsch | C |
+
+---
+
+**Gesamt: 41 Wörter / Phrasen. Szene B: 10. Szene C: 21. Szene D: 10.**
+
+---
+
+## 7. OBJECT REGISTRY
+
+| ID | Objekt | Kontext | Szenen |
+|---|---|---|---|
+| OBJ-01 | Auto (Markus) | Geparkt hinter dem Marktplatz. Lässt Radio laufen. Fährt am Ende auf N325. | A, E |
+| OBJ-02 | Radio (im Auto) | Läuft noch, während Markus zögert. | A |
+| OBJ-03 | Mappe (Markus) | Nimmt sie mit. Inhalt nicht beschrieben. | A |
+| OBJ-04 | Kaffeebecher | Jan bringt Kaffee. Auf dem Tisch während des Gesprächs. | B, C |
+| OBJ-05 | Mappe / Zeichnungen (Jan) | Jan öffnet sie, legt Zeichnungen auf den Tisch. Projektpläne für trap + boekenplank. | C |
+| OBJ-06 | Handy (Jan) | Vibriert auf dem Tisch. Jan schaut auf das Display. Dann Telefonat. | D |
+| OBJ-07 | Boekenplank | Auftragsgegenstand. Überraschung für Jans Frau. Thema des Telefonats. | C, D |
+| OBJ-08 | Houten trap | Auftragsgegenstand. Gemeinsam mit boekenplank aus Thoma Holz. | C |
+| OBJ-09 | Autoschlüssel | Markus hält ihn in der Hand auf dem Marktplatz. | E |
+
+---
+
+## 8. EMOTION REGISTRY
+
+*Nur offensichtlich erkennbare Emotionen, direkt aus dem Text. Keine Interpretation.*
+
+| Szene | Dominante Emotion | Beleg im Text |
+|---|---|---|
+| A – Ankunft | **Nervosität / Anspannung** | „Er lässt das Radio noch laufen." / „Atmet einmal durch." |
+| B – Erster Kontakt | **Erleichterung + Überraschung** | „Fast alles davon hatte er verstanden. Das überraschte ihn." |
+| C – Das Gespräch | **Vertrauen wächst** → Verbundenheit | Thoma-Holz-Reaktion Jans. Dankuwel-Korrektur ohne Tadel. „Das war ihm nicht entgangen." |
+| D – Der Anruf | **Verwirrung + Aufmerksamkeit** | „Er verstand fast nichts. Zu schnell." / Aber: Fragmente erkannt — Erfolg. |
+| D – Ende Telefonat | **Restunsicherheit** | „Und danach hatte Jan anders gelächelt. Nicht schlechter. Nur anders." (E4) |
+| E – Abreise | **Leise Neugier + Erleichterung** | „Das zählte." / „An das zusje." / Letzte Zeile auf Niederländisch gedacht. |
+
+---
+
+## 9. RELATIONSHIP REGISTRY
+
+---
+
+### REL-01 · MARKUS ↔ JAN
+
+| Moment | Beziehungsebene |
+|---|---|
+| Szene B: Erste Begegnung | Formell. Meneer-Ansprache beidseitig. |
+| Szene C, T09–T12: Thoma-Holz-Moment | Schlagartig: professionelle Anerkennung. Jan: überrascht und erfreut. „Precies! Kent u dat?" Wärme entsteht. |
+| Szene C, T14–T15: dankjewel/dankuwel | Jan korrigiert Markus' Fehler — sanft, ohne Tadel. Markus: „Das war ihm nicht entgangen." Vertrauen. |
+| Szene D, T24: „De boekenplank?" | Markus nutzt produktiv ein eben gelerntes Wort. Jan bestätigt. Kurze, echte Verbindung nach schwierigem Telefonat. |
+| Ende Ep01 | Erste Begegnung positiv abgeschlossen. Samenwerking vereinbart. Nächstes Ereignis: Zeichnungen am Mittwoch. |
+
+**Status:** Neu. Professionell. Positiv.
+
+---
+
+### REL-02 · JAN ↔ JANS FRAU
+
+Nicht direkt dargestellt. Fakten:
+- Jan plant Überraschung für sie (boekenplank)
+- Sie weiß nichts davon — Stand Ep01
+
+---
+
+### REL-03 · JAN ↔ HET ZUSJE
+
+Fakten:
+- Zusje ist Schwester von Jans Frau
+- Hat Jan während des Treffens angerufen (T20)
+- Jans Gesichtsausdruck verändert sich beim Anruf (T19)
+- Jan hat nach dem Gespräch anders gelächelt (E.4)
+- Was genau gesprochen wurde: Markus verstand nur Fragmente
+
+**Status:** Unklar. Quelle der offenen Threads 1–3.
+
+---
+
+### REL-04 · MARKUS ↔ SPRACHGEFÜHL
+
+Nicht interpersonell, aber kanonisch dokumentiert:
+
+| Szene | Entwicklung |
+|---|---|
+| A | Kein Niederländisch. Zehn Minuten zu früh. |
+| B | Erster NL-Satz: „Koffie, graag." Versteht Jan's Begrüßung fast vollständig. |
+| C | Spricht 4 NL-Sätze. Erkennt Thoma Holz. Macht Höflichkeitsfehler, korrigiert sich nicht selbst, nimmt Korrektur an. |
+| D | Versteht das Telefonat fast nicht. Erkennt aber 3 Fragmente: boekenplank, woensdag, „zij weet het nog niet." |
+| E | Denkt am Ende auf Niederländisch — ohne es zu bemerken. |
+
+---
+
+## 10. EPISODE SUMMARY
+
+*(Produktionszwecke. Keine Inhaltsangabe.)*
+
+**Episode 01 · „Goedemorgen, meneer Weber" · arc_markus_nijmegen**
+
+Erste Episode. Einführung aller Hauptelemente. Einzelner Schauplatz (Jan's Büro, Nijmegen). Einzige Begegnung zwischen CHAR-01 und CHAR-02. Keine Action-Sequenzen. Vollständig dialog- und erzählergetragen.
+
+Drei strukturelle Layer: Geschichte (Schreiner-Auftrag), Sprachgefühl (NL-Kognaten, erste Produktionskompetenz), Cliffhanger (Telefonat, Lächeln, das zusje). Alle drei Layers sind in Ep01 aufgebaut und offen.
+
+Sprachliches Niveau: A1. Kognaten-Dichte 72 %. 41 Vokabular-Targets. Keine Grammatik-Erklärungen. Lernprozess ausschließlich situativ und narrativ.
+
+Technisch: 5 Szenen, 31 Dialogue-Blöcke, 3 Inline-Hooks, 2 Spaced-Hooks (24h, 72h). Block D.4 mit bewusstem Interlinear-Entzug (controlled incomprehension). Szene E ohne Vokabular-Targets (narratives Coda-Prinzip).
+
+Offene Threads: 6. Dominanter Thread: das zusje und das veränderte Lächeln. Liefert Cliffhanger für Ep02.
+
+Anschlussmöglichkeiten Ep02: Mittwochs-Lieferung der Zeichnungen. Das zusje. Jans Frau. Weitere Orte in Nijmegen.
+
+---
+
+*Production OS v1.0 · Nur verifizierbare Fakten · Keine Interpretation*
+*Quelle: episode-01.json · arc_markus_nijmegen · Extraktionsdatum: Ep01 final*
