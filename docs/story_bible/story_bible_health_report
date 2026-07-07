@@ -1,1 +1,229 @@
 
+# STORY BIBLE HEALTH REPORT
+**Keiten Experience Engine · arc_markus_nijmegen**
+*Stand: Nach Abschluss Episode 02 · Konsolidierungsstand v2.0*
+
+---
+
+## ZUSAMMENFASSUNG
+
+Die Story Bible wurde nach Abschluss von Episode 02 konsolidiert.
+Die bisherigen Einzeldokumente (`production_os_ep01_v10.md`,
+`production_os_ep02_update.md`, `character_registry_v10.md`) sind
+vollständig in `production_os_v20.md` aufgegangen.
+Diese Datei ist ab jetzt die einzige verbindliche Wissensquelle.
+
+---
+
+## 1. ÜBERNOMMENE ÄNDERUNGEN
+
+| Quelle | Änderung | Übernommen in |
+|---|---|---|
+| production_os_ep02_update.md | LOC-08, LOC-09 | production_os_v20.md §2 |
+| production_os_ep02_update.md | CHAR-05 (Marta) Erstauftrittsdaten | production_os_v20.md §1 |
+| production_os_ep02_update.md | Timeline T31–T51 | production_os_v20.md §3 |
+| production_os_ep02_update.md | THREAD-04 geschlossen | production_os_v20.md §5 |
+| production_os_ep02_update.md | THREAD-07 neu (Verjaardag) | production_os_v20.md §5 |
+| production_os_ep02_update.md | Vocabulary Ep02 (23 neue Targets) | production_os_v20.md §6 |
+| character_registry_v10.md | CHAR-01–05 Grunddaten | production_os_v20.md §1 |
+| Episode-01-Design-Dok | Jan = Architekt | production_os_v20.md §1 CHAR-02 |
+| episode-02.json | OBJ-10–13 | production_os_v20.md §7 |
+| drehbuch_ep02 | Emotion Registry Ep02 | production_os_v20.md §8 |
+| drehbuch_ep02 | REL-04 Markus ↔ Marta | production_os_v20.md §9 |
+
+---
+
+## 2. NICHT ÜBERNOMMENE ÄNDERUNGEN + BEGRÜNDUNG
+
+| ID | Änderung | Entscheidung |
+|---|---|---|
+| CN-03 | Thoma Holz in Ep02 | Bewusst nicht eingeführt — entsteht wenn natürlich |
+| CHAR-03 | CHAR-03 Label | In CHAR-05 überführt — CHAR-03 war Platzhalter |
+
+---
+
+## 3. WIDERSPRÜCHE UND ENTSCHEIDUNGEN
+
+### D-01 · Vocabulary-Count-Fehler (falsch positiv)
+**Befund:** Regex-Scan meldete Mismatch.
+**Analyse:** Kein echter Widerspruch. OS2 nennt korrekt »64 Targets gesamt (41+23)«. Falscher Treffer durch Tabellenzelle mit »2«.
+**Entscheidung:** Kein Handlungsbedarf.
+
+### D-02 · Zeichnungen Mittwoch vs. Donnerstag
+**Befund:** OS1 sagt Mittwoch versprochen; OS2 sagt Donnerstag eingetroffen.
+**Analyse:** Kein Widerspruch. OS1 dokumentiert das Versprechen. OS2 dokumentiert die Lieferung. THREAD-04 korrekt als »geschlossen« markiert.
+**Entscheidung:** Kein Handlungsbedarf. Beide Angaben bleiben erhalten.
+
+### D-03 · Jan's Beruf: »unbekannt« vs. »Architekt«
+**Befund:** CharReg v1.0 sagt »Beruf: nicht explizit genannt«. Episode-01-Design-Dok sagt »niederländischem Architekten und potenziellem Großauftraggeber«.
+**Entscheidung:** **ARQUITEKT wird als canon übernommen.**
+Begründung: Das Episode-01-Design-Dokument ist das maßgeblichste inhaltliche Dokument aus der Kreativphase. »Architekturbüro« erscheint im Setting-Absatz als Faktum, nicht als Spekulation. Der Begriff »schrijnwerker« in Ep02 (Jans Vorstellung gegenüber Marta) ist konsistent mit einem Architekten, der einen Schreiner für Innenausbau engagiert. Diese Entscheidung ist in production_os_v20.md umgesetzt.
+
+### D-04 · Marta-Name
+**Befund:** Alle Quellen konsistent: Name vorläufig, nicht canon-bestätigt.
+**Entscheidung:** Status bleibt »vorläufig«. Erst mit Erstellung von hidden_canon.md zu bestätigen.
+
+### D-05 · Supersediertes Ep02-Szenario
+**Befund:** `episode_02_koffie_alstublieft.md` enthält ein anderes Ep02-Szenario (Titel: »Koffie, alstublieft«).
+**Entscheidung:** Archivieren. Nicht löschen — zeigt Entwicklungsgeschichte. Kein Konflikt mit aktuellem Canon, da es klar als Entwurf datiert ist.
+
+### D-06 · Markus Alter 42 fehlt in JSON
+**Befund:** Character Registry und Design-Dokument sagen 42. JSON hat keine Altersangabe.
+**Entscheidung:** Alter wird **nicht** in episodische JSONs aufgenommen. Altersangaben gehören in `production_os_v20.md` (character section). Keine Änderung an JSONs nötig.
+
+---
+
+## 4. ARCHIVSTRUKTUR (VORSCHLAG)
+
+Keine Verschiebungen werden hier vorgenommen.
+Folgende Struktur wird für die nächste Repository-Bereinigung vorgeschlagen:
+
+```
+docs/
+├── story_bible/
+│   ├── production_os_v20.md          ← PRIMÄR: einzige verbindliche Quelle
+│   ├── hook_design_principles.md     ← PRIMÄR: gültig für alle Episoden
+│   └── episode_template_v01.md       ← AKTIV: Vorlage für Ep03+
+│
+├── episodes/
+│   ├── episode-01.json               ← PRIMÄR
+│   ├── episode-02.json               ← PRIMÄR
+│   └── drehbuch_ep02_op_maat_final.md ← ARCHIV EP02 (Textquelle)
+│
+├── tech/
+│   ├── kcl_v01_episode.schema.json   ← AKTIV bis v0.2
+│   ├── kcl_v01_event.schema.json     ← AKTIV bis v0.2
+│   ├── kcl_v02_proposals.md          ← AKTIV (offene Punkte)
+│   └── tracking_spec_v01.md          ← AKTIV (noch nicht umgesetzt)
+│
+└── archive/
+    ├── episode_01/
+    │   ├── production_os_ep01_v10.md
+    │   ├── episode_01_goedemorgen_meneer_weber.md
+    │   ├── episode-01_minimal.json
+    │   ├── ep01_scene_c_design.md
+    │   ├── ep01_scene_d_design.md
+    │   └── ep01_scene_e_design.md
+    │
+    ├── episode_02/
+    │   ├── production_os_ep02_update.md
+    │   ├── beat_sheet_ep02_v10.md
+    │   └── episode_02_koffie_alstublieft.md
+    │
+    ├── story_bible/
+    │   └── character_registry_v10.md  ← Detailliertes Casting-Dokument
+    │
+    ├── architecture/
+    │   ├── staffel1_architektur_review.md
+    │   ├── gap_plan_html_vs_kcl.md
+    │   ├── mvp_entscheidungsmatrix_v01.md
+    │   ├── patchplan_kee_event_schema_v01.md
+    │   └── kcl_v01_event_examples.json
+    │
+    ├── quality/
+    │   └── quality_pass_v10.md
+    │
+    └── research/
+        ├── Learning-Engine_Forschungs-und-Architekturkonzept.md
+        └── content_inventur_v02.md
+```
+
+**Renderer-Dateien** (HTML, JS, ZIP) — separate Kategorie:
+```
+renderer/
+├── index.html                        ← AKTIV (CSS inline)
+├── js/
+│   ├── app.js, renderer.js,
+│   │   hookEngine.js, jsonLoader.js,
+│   │   trackingAdapter.js            ← AKTIV
+└── episodes/
+    ├── episode-01.json               ← Kopie aus docs/episodes/
+    └── episode-02.json               ← Noch einzufügen
+```
+
+---
+
+## 5. EP03 READINESS
+
+**Ep03 kann beginnen, sobald folgende 5 Punkte entschieden sind:**
+
+| # | Punkt | Priorität |
+|---|---|---|
+| P1 | `hidden_canon.md` erstellen — definiert, was das zusje weiß | BLOCKIEREND |
+| P2 | Marta-Namen bestätigen oder ändern | BLOCKIEREND |
+| P3 | Verjaardag-Datum: konkretes Datum setzen (z.B. »Samstag in 4 Wochen« = Datum X) | EMPFOHLEN |
+| P4 | Ep03-Location: Werkstatt Kleve? Jans Haus? Anderer Ort? | BLOCKIEREND |
+| P5 | Ep03-Beat Sheet | BLOCKIEREND |
+
+**Bedingt (sollten bekannt sein, blockieren nicht):**
+
+| # | Punkt |
+|---|---|
+| W1 | Jan's Profession: offiziell als »Architekt« in hidden_canon.md verankern |
+| W2 | Thread-01 (verändertes Lächeln): Autorenentscheidung, wann und wie aufzulösen |
+| W3 | Season-1-Arc-Plan (staffel1_architektur_review.md) in production_os_v20.md integrieren |
+| W4 | KCL v0.2 Entscheidung: phone_dialogue + screen_text wenn Ep03 diese Typen braucht |
+
+---
+
+## 6. STORY BIBLE HEALTH REPORT
+
+---
+
+### Vollständigkeit — 7/10
+
+**Stärken:** Production OS v2.0 ist umfassend. 64 Vocabulary-Targets dokumentiert. Timeline vollständig bis T51. Character-Daten für CHAR-01 und CHAR-02 solide. Object Registry komplett.
+
+**Lücken:** hidden_canon.md fehlt (Zusje-Arc, Hidden-Story-Details). CHAR-04 und CHAR-05 noch dünn. Season-1-Arc noch nicht in OS integriert. CHAR-05 Name unbestätigt.
+
+---
+
+### Konsistenz — 8/10
+
+**Stärken:** Nach der Konsolidierung keine kritischen Widersprüche. Vocabulary-Counts stimmen. Timeline kohärent. Thread-Status korrekt.
+
+**Restrisiken:** Jan's Beruf bisher nur aus Designdokument bestätigt, nicht aus Dialog. Markus-Alter liegt nur in Designdok + CharReg, nicht in JSON.
+
+---
+
+### Wartbarkeit — 7/10
+
+**Stärken:** Eine primäre Datei (`production_os_v20.md`) für alle Story-Bible-Fragen. Klare Trennung JSON (Renderer-Daten) vs. MD (Story-Wissen).
+
+**Problem:** `character_registry_v10.md` enthält tiefere Charakterentwicklungs-Informationen (Casting-Director-Perspektive), die in `production_os_v20.md` nicht vollständig repliziert sind. Risiko der Divergenz, wenn beide parallel gepflegt werden.
+
+**Empfehlung:** `character_registry_v10.md` archivieren. Nur `production_os_v20.md` aktiv pflegen. Falls detailliertere Character Notes gebraucht werden, als `production_os_v20.md` Appendix ergänzen.
+
+---
+
+### Skalierbarkeit — 7/10
+
+**Stärken:** KCL-Schema mit additionalProperties:false verhindert Schema-Drift. Klares Block-Typ-System. Vocabulary-Target-Tracking sauber.
+
+**Risiken:** Bei Ep06+ wird `production_os_v20.md` sehr lang. Erwägen: Separate Registries (Vocabulary, Characters, Locations) ab Ep04. Das Staffel-1-Architektur-Review benennt Skalierungsprobleme bereits explizit.
+
+---
+
+### Nachvollziehbarkeit — 9/10
+
+**Stärken:** Alle Canon-Entscheidungen mit Quellangabe. CANON vs. Character Development explizit markiert. Timeline mit Block-Referenzen. Widersprüche dokumentiert statt stillschweigend behoben.
+
+**Schwäche:** Die Entwicklungsgeschichte (warum bestimmte Entscheidungen getroffen wurden) liegt in Archivdokumenten, die nach der Archivierung schwerer zugänglich sind. Erwägen: Kurze Entscheidungslog-Sektion in production_os_v20.md.
+
+---
+
+### Produktionstauglichkeit — 8/10
+
+**Stärken:** Beide Episoden-JSONs 14/14 im Produktionscheck bestanden. KCL-Schema eingehalten. Speaker-Note-Leak behoben. Renderer deploybar auf GitHub Pages.
+
+**Offene Punkte:** Audio-Produktion steht aus (alle start_ms sind Platzhalter). Tracking-Integration unvollständig. KCL v0.2 (phone_dialogue, screen_text) nicht umgesetzt.
+
+---
+
+### Gesamtbewertung — 7.7/10
+
+Die Story Bible ist **pilottauglich** und hat eine solide Grundstruktur. Die kritischen Lücken (hidden_canon.md, Ep03-Beat Sheet) sind bekannt und beherrschbar. Die Konsolidierung hat redundante Quellen eliminiert. Das System ist bereit für Ep03-Entwicklung — sobald die 5 Pflichtpunkte entschieden sind.
+
+---
+
+*Story Bible Health Report · arc_markus_nijmegen · Nach Ep02-Abschluss*
